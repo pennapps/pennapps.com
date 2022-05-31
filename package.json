@@ -1,0 +1,21 @@
+{
+  "name": "pennapps.com-redesign",
+  "version": "1.0.0",
+  "private": true,
+  "description": "pennapps.com-redesign",
+  "keywords": [
+    "gatsby"
+  ],
+  "scripts": {
+    "develop": "gatsby develop",
+    "start": "gatsby develop",
+    "build": "gatsby build",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
+  },
+  "dependencies": {
+    "gatsby": "^4.15.1",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0"
+  }
+}
