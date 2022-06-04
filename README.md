@@ -49,7 +49,7 @@ Below is the default Gatsby welcome page.
 
     Your site is now running at http://localhost:8000!
 
-    Edit `src/pages/index.js` to see your site update in real-time!
+    Edit your page in `src/pages/yourFile.js` to see your site update in real-time!
 
 4.  **Learn more**
 
