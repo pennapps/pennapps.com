@@ -7,9 +7,27 @@
   Gatsby minimal starter
 </h1>
 
+## Notes from Joe:
+
+Welcome to the PennApps Dev Team! To contribute to this Git repository:
+
+  - Create a new branch named roughly after what you're implementing
+  - Commit and push up your changes (to your branch)
+  - Create a Pull Request to merge your branch into the main branch
+  - Wait for someone else on Dev to merge your branch! (We'll get to it eventually.)
+
+If you're new to web development, fear not. There are online tutorials and resources (including those of Gatsby below), though the most important resources will probably be:
+  - Previous projects in the PennApps organization (check out the mentoring site!)
+  - React tutorials
+  - CIS 197's website https://www.seas.upenn.edu/~cis197/
+
+To start development, just run `gatsby develop` in your terminal (in VSCode, press Control + \` to access the terminal). It will install dependencies, run the local development server, and hot-reload your page so that any changes saved in your editor are reflected in real time. (Might be a bit slow at first.)
+
+Below is the default Gatsby welcome page.
+
 ## 🚀 Quick start
 
-1.  **Create a Gatsby site.**
+1.  **Create a Gatsby site. (NO NEED TO DO THIS)**
 
     Use the Gatsby CLI to create a new site, specifying the minimal starter.
 
@@ -31,7 +49,7 @@
 
     Your site is now running at http://localhost:8000!
 
-    Edit `src/pages/index.js` to see your site update in real-time!
+    Edit your page in `src/pages/yourFile.js` to see your site update in real-time!
 
 4.  **Learn more**
 
@@ -47,8 +65,3 @@
 
     - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
 
-## 🚀 Quick start (Gatsby Cloud)
-
-Deploy this starter with one click on [Gatsby Cloud](https://www.gatsbyjs.com/cloud/):
-
-[<img src="https://www.gatsbyjs.com/deploynow.svg" alt="Deploy to Gatsby Cloud">](https://www.gatsbyjs.com/dashboard/deploynow?url=https://github.com/gatsbyjs/gatsby-starter-minimal)
