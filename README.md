@@ -21,11 +21,13 @@ If you're new to web development, fear not. There are online tutorials and resou
   - React tutorials
   - CIS 197's website https://www.seas.upenn.edu/~cis197/
 
-To start development, just run `gatsby develop` in your terminal (in VSCode, press Control + \`). It will install dependencies, run the local development server, and hot-reload your page so that any changes saved in your editor are reflected in real time.
+To start development, just run `gatsby develop` in your terminal (in VSCode, press Control + \` to access the terminal). It will install dependencies, run the local development server, and hot-reload your page so that any changes saved in your editor are reflected in real time. (Might be a bit slow at first.)
+
+Below is the default Gatsby welcome page.
 
 ## 🚀 Quick start
 
-1.  **Create a Gatsby site. (No need to do this)**
+1.  **Create a Gatsby site. (NO NEED TO DO THIS)**
 
     Use the Gatsby CLI to create a new site, specifying the minimal starter.
 
