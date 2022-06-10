@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css?family=Proxima+Nova');
+
+@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+
+h4 {
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.section-divider {
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+hr {
+  margin: 0;
+}
+
+.ambassador-section {
+  line-height: 1.5;
+  margin-bottom: 10%;
+  font-family: "Proxima Nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.header-section {
+  width: 80%;
+  margin: auto;
+  margin-bottom: 5%;
+}
+
+.horizontal-align {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.horizontal-section {
+  margin-right: 3%;
+  margin-left: 3%;
+  max-width: 33%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.link-btn {
+  width: 20%;
+  background-color: #CDE1F9;
+  color: #6593C1;
+  border-radius: 20px;
+  border: none;
+  padding: 6px;
+}
+
+.link-btn:hover {
+  background-color: #6593C1;
+  color: #CDE1F9;
+}
+
+.image-section-placeholder {
+  text-align: center;
+}
+
+.main-content {
+  width: 45%;
+  margin: auto;
+}
+
+.arrow-button {
+  float: right;
+  background: none;
+  border: none;
+}
+
+.faq-section {
+  margin: auto;
+  padding: 10px;
+}
+
+.faqs-container {
+  margin: 0;
+}
+
+.faq-content {
+  margin-left: 3%;
+}
+
+.question {
+  font-weight: bold;
+}
+
+.answer {
+  margin-top: 15px;
+}
