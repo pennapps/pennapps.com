@@ -18,8 +18,9 @@ hr {
 
 .ambassador-section {
   line-height: 1.5;
-  margin-bottom: 10%;
   font-family: "Proxima Nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  max-width: 90%;
+  margin: auto;
 }
 
 .header-section {
@@ -67,22 +68,46 @@ hr {
 }
 
 .arrow-button {
-  float: right;
-  background: none;
-  border: none;
+  display: absolute;
+  justify-content: center;
+  flex-direction: column;
+  margin-right: 3%;
+  margin-top: 20px;
 }
 
 .faq-section {
-  margin: auto;
   padding: 10px;
+  border: none;
+  width: 100%;
+  text-align: left;
+  font-size: 15px;
+  font-family: "Proxima Nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  background: none;
 }
 
 .faqs-container {
-  margin: 0;
+  width: 100%;
+  border: none;
+  background: none;
+}
+
+.faqs-container:hover .question {
+  color: #686767;
+}
+
+.faqs-container:hover .arrow-button {
+  color: #686767;
 }
 
 .faq-content {
-  margin-left: 3%;
+  margin-left: 2%;
+  margin-right: 2%;
+  padding: 5px;
+}
+
+.faqs {
+  margin-bottom: 15%;
 }
 
 .question {
@@ -91,4 +116,5 @@ hr {
 
 .answer {
   margin-top: 15px;
+  width: 90%;
 }

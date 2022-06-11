@@ -1,4 +1,6 @@
 import * as React from 'react'
+import { FaChevronRight } from '@react-icons/all-files/fa/FaChevronRight'
+import { FaChevronDown } from '@react-icons/all-files/fa/FaChevronDown'
 import '../styles/ambassadors.css'
 
 export default function Ambassadors() {
@@ -114,83 +116,83 @@ export default function Ambassadors() {
         <hr className="section-divider" />
         <div className="faqs">
           <h2>FAQS</h2>
-          <div className="faqs-container">
-            <hr />
-            <div
-              className="faq-section"
-              style={{ backgroundColor: expandedSectionColor(showQ1) }}
-            >
-              <div className="faq-content">
-                <button
-                  className="arrow-button"
-                  type="button"
-                  onClick={() => setShowQ1(!showQ1)}
-                >
-                  {showQ1 ? '>' : 'v'}
-                </button>
-                <div className="question">When will applications open and close?</div>
-                {showQ1 ? <section className="answer">Applications will open early June and will close mid-june. We will send out results shortly after the application closes.</section> : ''}
+          <hr />
+          <button type="button" className="faqs-container" onClick={() => setShowQ1(!showQ1)} style={{ backgroundColor: expandedSectionColor(showQ1) }}>
+            <div className="horizontal-align">
+              <button
+                type="button"
+                className="faq-section"
+              >
+                <div className="faq-content">
+                  <div className="question">When will applications open and close?</div>
+                  {showQ1 ? <section className="answer">Applications will open early June and will close mid-june. We will send out results shortly after the application closes.</section> : ''}
+                </div>
+              </button>
+              <div
+                className="arrow-button"
+              >
+                {showQ1 ? <FaChevronDown /> : <FaChevronRight />}
               </div>
             </div>
-            <hr />
-          </div>
-          <div className="faqs-container">
-            <div
-              className="faq-section"
-              style={{ backgroundColor: expandedSectionColor(showQ2) }}
-            >
-              <div className="faq-content">
-                <button
-                  className="arrow-button"
-                  type="button"
-                  onClick={() => setShowQ2(!showQ2)}
-                >
-                  {showQ2 ? '>' : 'v'}
-                </button>
-                <div className="question">What materials do we need to promote PennApps?</div>
-                {showQ2 ? <section className="answer">Answer</section> : ''}
+          </button>
+          <hr />
+          <button type="button" className="faqs-container" onClick={() => setShowQ2(!showQ2)} style={{ backgroundColor: expandedSectionColor(showQ2) }}>
+            <div className="horizontal-align">
+              <button
+                type="button"
+                className="faq-section"
+              >
+                <div className="faq-content">
+                  <div className="question">What materials do we need to promote PennApps?</div>
+                  {showQ2 ? <section className="answer">Answer</section> : ''}
+                </div>
+              </button>
+              <div
+                className="arrow-button"
+              >
+                {showQ2 ? <FaChevronDown /> : <FaChevronRight />}
               </div>
             </div>
-            <hr />
-          </div>
-          <div className="faqs-container">
-            <div
-              className="faq-section"
-              style={{ backgroundColor: expandedSectionColor(showQ3) }}
-            >
-              <div className="faq-content">
-                <button
-                  className="arrow-button"
-                  type="button"
-                  onClick={() => setShowQ3(!showQ3)}
-                >
-                  {showQ3 ? '>' : 'v'}
-                </button>
-                <div className="question">Do CAs get automatic admission to PennApps?</div>
-                {showQ3 ? <section className="answer">Answer</section> : ''}
+          </button>
+          <hr />
+          <button type="button" className="faqs-container" onClick={() => setShowQ3(!showQ3)} style={{ backgroundColor: expandedSectionColor(showQ3) }}>
+            <div className="horizontal-align">
+              <button
+                type="button"
+                className="faq-section"
+              >
+                <div className="faq-content">
+                  <div className="question">Do CAs get automatic admission to PennApps?</div>
+                  {showQ3 ? <section className="answer">Answer</section> : ''}
+                </div>
+              </button>
+              <div
+                className="arrow-button"
+              >
+                {showQ3 ? <FaChevronDown /> : <FaChevronRight />}
               </div>
             </div>
-            <hr />
-          </div>
-          <div className="faqs-container">
-            <div
-              className="faq-section"
-              style={{ backgroundColor: expandedSectionColor(showQ4) }}
-            >
-              <div className="faq-content">
-                <button
-                  className="arrow-button"
-                  type="button"
-                  onClick={() => setShowQ4(!showQ4)}
-                >
-                  {showQ4 ? '>' : 'v'}
-                </button>
-                <div className="question">How will my progress be measured?</div>
-                {showQ4 ? <section className="answer">Answer</section> : ''}
+          </button>
+          <hr />
+          <button type="button" className="faqs-container" onClick={() => setShowQ4(!showQ4)} style={{ backgroundColor: expandedSectionColor(showQ4) }}>
+            <div className="horizontal-align">
+              <button
+                type="button"
+                className="faq-section"
+              >
+                <div className="faq-content">
+                  <div className="question">How will my progress be measured?</div>
+                  {showQ4 ? <section className="answer">Answer</section> : ''}
+                </div>
+              </button>
+              <div
+                className="arrow-button"
+              >
+                {showQ4 ? <FaChevronDown /> : <FaChevronRight />}
               </div>
             </div>
-            <hr />
-          </div>
+          </button>
+          <hr />
         </div>
       </div>
     </div>
