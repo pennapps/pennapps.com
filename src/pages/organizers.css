@@ -1,0 +1,52 @@
+body {
+    background-color: #F5F5F5;
+    margin: 0;
+}
+
+.nav-bar-placeholder {
+    background-color: #ffddd2;
+    max-height: 5vh;
+    text-align: center;
+    padding: 2.5vh;
+}
+
+.applications-header-container {
+    background-color: azure;
+    height: 20vh;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.applications {
+    width: 30vw;
+    background-color: beige;
+}
+
+.pictures {
+    width: 30vw;
+    background-color: bisque;
+}
+
+.applications-body-container {
+    width: 61.8vw;
+    background-color: cornsilk;
+    margin: 0 auto;
+
+}
+
+.applications-body-container>* {
+    display: block;
+    margin: 3vh 0;
+    padding-bottom: 3vh;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: rgba(101, 147, 193, 0.6);
+}
+
+.applications-faqs {
+    border-bottom-style: none;
+}
+
+h3 {
+    margin: 0;
+}
