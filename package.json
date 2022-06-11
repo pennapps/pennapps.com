@@ -17,7 +17,8 @@
     "gatsby": "^4.15.1",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
-    "react-router-dom": "^6.3.0"
+    "react-router-dom": "^6.3.0",
+    "react-spring": "^9.4.5"
   },
   "devDependencies": {
     "eslint": "^7.32.0",
@@ -26,5 +27,16 @@
     "eslint-plugin-jsx-a11y": "^6.5.1",
     "eslint-plugin-react": "^7.30.0",
     "eslint-plugin-react-hooks": "^4.5.0"
-  }
+  },
+  "main": "gatsby-config.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pennapps/pennapps.com-redesign.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pennapps/pennapps.com-redesign/issues"
+  },
+  "homepage": "https://github.com/pennapps/pennapps.com-redesign#readme"
 }
