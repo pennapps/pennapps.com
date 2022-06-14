@@ -13,7 +13,9 @@ export default function Organizers() {
       </div>
       <div className="applications-header-container">
         <div className="applications">
-          <h3>Applications are Open!</h3>
+          <h2>Applications are Open!</h2>
+          <div>Join the PennApps organizing team today</div>
+          <button>LINK</button>
         </div>
         <div className="pictures">
           Illustration or exec pic here
