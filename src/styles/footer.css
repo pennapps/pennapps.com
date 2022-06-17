@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css?family=Proxima+Nova');
+
+.footer {
+  text-align: center;
+  font-family: "Proxima Nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 30px !important;
+}
+
+.icon {
+  margin-left: 12px;
+  color: black;
+}
+
+.icon:hover {
+  color: grey;
+}
+
+.email {
+  color: black;
+  outline: none;
+  text-decoration: none;
+  margin-right: 7px;
+}
+
+.email:hover {
+  text-decoration: underline;
+}
