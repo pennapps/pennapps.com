@@ -19,7 +19,8 @@ hr {
 .ambassador-section {
   line-height: 1.5;
   font-family: "Proxima Nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  max-width: 90%;
+  max-width: 85%;
+  min-width: 750px;
   margin: auto;
 }
 
@@ -46,6 +47,7 @@ hr {
 
 .link-btn {
   width: 20%;
+  min-width: 50px;
   background-color: #CDE1F9;
   color: #6593C1;
   border-radius: 20px;
