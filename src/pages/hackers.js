@@ -3,7 +3,7 @@ import { Link } from 'gatsby'
 import { useSpring, animated } from 'react-spring'
 import chevronImage from '../images/arrow-east.png'
 import iterationLogo from '../images/cloud_square_logo 1.png'
-import './hackers.css'
+import '../styles/hackers.css'
 
 export default function Hackers() {
   return (

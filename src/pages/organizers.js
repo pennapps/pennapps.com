@@ -1,5 +1,5 @@
 import * as React from 'react'
-import './organizers.css'
+import '../styles/organizers.css'
 import ApplicationsIntro from '../components/ApplicationsIntro'
 import ApplicationsProcess from '../components/ApplicationsProcess'
 import ApplicationsCommittees from '../components/ApplicationsCommittees'
