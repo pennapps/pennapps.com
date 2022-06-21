@@ -19,12 +19,10 @@ hr {
 .ambassador-section {
   line-height: 1.5;
   font-family: "Proxima Nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  max-width: 85%;
   margin: auto;
 }
 
 .header-section {
-  width: 80%;
   margin: auto;
   margin-bottom: 5%;
 }
@@ -32,20 +30,20 @@ hr {
 .horizontal-align {
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-evenly;
 }
 
 .horizontal-section {
-  margin-right: 3%;
-  margin-left: 3%;
-  max-width: 33%;
+  margin-top: 6%;
+  max-width: 30vw;
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
 
 .link-btn {
-  width: 20%;
+  width: 103px;
+  height: 41px;
   min-width: 50px;
   background-color: #CDE1F9;
   color: #6593C1;
@@ -61,10 +59,12 @@ hr {
 
 .image-section-placeholder {
   text-align: center;
+  width: 30vw;
+  background-color: rgba(101, 147, 193, 0.6);
 }
 
 .main-content {
-  width: 45%;
+  width: 49vw;
   margin: auto;
 }
 
@@ -76,7 +76,7 @@ hr {
   margin-top: 20px;
 }
 
-.faq-section {
+.faq-section-am {
   padding: 10px;
   border: none;
   width: 100%;

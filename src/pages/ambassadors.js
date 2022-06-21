@@ -20,6 +20,9 @@ export default function Ambassadors() {
 
   return (
     <div>
+      <div className="nav-bar-placeholder">
+        Nav Bar Placeholder
+      </div>
       <div className="ambassador-section">
         <div className="header-section">
           <div>
@@ -52,7 +55,7 @@ export default function Ambassadors() {
         <div className="main-content">
           <div className="application-info">
             <div>
-              <h2>Become a PennApps Organizer</h2>
+              <h3>Become a PennApps Campus Ambassador</h3>
               <p>
                 Want to represent PennApps and expand the nation&#39;s first
                 college hacakthon to more potential hackers? Looking to expand
@@ -73,7 +76,7 @@ export default function Ambassadors() {
             </div>
             <hr className="section-divider" />
             <div>
-              <h2>Application Information</h2>
+              <h3>Application Information</h3>
               <div>
                 <h4>RESPONSIBILITIES</h4>
                 <div>
@@ -115,17 +118,17 @@ export default function Ambassadors() {
           </div>
           <hr className="section-divider" />
           <div className="faqs">
-            <h2>FAQS</h2>
+            <h3>FAQS</h3>
             <hr />
             <button type="button" className="faqs-container" onClick={() => setShowQ1(!showQ1)} style={{ backgroundColor: expandedSectionColor(showQ1) }}>
               <div className="horizontal-align">
                 <button
                   type="button"
-                  className="faq-section"
+                  className="faq-section-am"
                 >
                   <div className="faq-content">
                     <div className="question">When will applications open and close?</div>
-                    {showQ1 ? <section className="answer">Applications will open early June and will close mid-june. We will send out results shortly after the application closes.</section> : ''}
+                    {showQ1 ? <section className="answer">Applications will open early June and will close mid-June. We will send out results shortly after the application closes.</section> : ''}
                   </div>
                 </button>
                 <div
@@ -140,11 +143,11 @@ export default function Ambassadors() {
               <div className="horizontal-align">
                 <button
                   type="button"
-                  className="faq-section"
+                  className="faq-section-am"
                 >
                   <div className="faq-content">
                     <div className="question">What materials do we need to promote PennApps?</div>
-                    {showQ2 ? <section className="answer">Answer</section> : ''}
+                    {showQ2 ? <section className="answer">If accepted as a campus ambassador, we will send marketing materials you can send on social media, newsletters, etc.</section> : ''}
                   </div>
                 </button>
                 <div
@@ -159,11 +162,11 @@ export default function Ambassadors() {
               <div className="horizontal-align">
                 <button
                   type="button"
-                  className="faq-section"
+                  className="faq-section-am"
                 >
                   <div className="faq-content">
                     <div className="question">Do CAs get automatic admission to PennApps?</div>
-                    {showQ3 ? <section className="answer">Answer</section> : ''}
+                    {showQ3 ? <section className="answer">While you are considered with the priority admission, you are not guaranteed a spot.</section> : ''}
                   </div>
                 </button>
                 <div
@@ -178,11 +181,11 @@ export default function Ambassadors() {
               <div className="horizontal-align">
                 <button
                   type="button"
-                  className="faq-section"
+                  className="faq-section-am"
                 >
                   <div className="faq-content">
                     <div className="question">How will my progress be measured?</div>
-                    {showQ4 ? <section className="answer">Answer</section> : ''}
+                    {showQ4 ? <section className="answer">Participants will have the option to name the campus ambassador they heard from on the Hacker Application.</section> : ''}
                   </div>
                 </button>
                 <div

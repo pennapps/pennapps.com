@@ -6,9 +6,9 @@ export default function ApplicationsFAQs() {
     'Who can be an organizer for PennApps?':
             'Only Penn students can be organizers. If you’re a current Penn student, look out for an application in April if you are interested in joining us!',
     'Do I need previous experience to be an organizer?':
-            'ANSWER ANSWER ANSWER',
+            'No previous experience required! We are looking for people who are passionate about creating an exciting and inclusive space to meet others and learn about tech and entrepreneurship and are able to commit to the time to be an organizer.',
     'What is the time commitment?':
-            'ANSWER ANSWER ANSWER',
+            'Expect to commit 2 - 4 hours per week to PennApps meetings and tasks.',
 
   }
   return (
