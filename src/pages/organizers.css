@@ -1,0 +1,169 @@
+@import "fonts.css";
+
+body {
+    background-color: #FFFFFF;
+    margin: 0;
+}
+
+div {
+    font-family: 'Proxima Nova';
+    -webkit-font-smoothing: antialiased;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+h2 {
+    font-family: Futura;
+    -webkit-font-smoothing: antialiased;
+    color: #0F2944;
+    font-size: 26px;
+
+}
+
+h3 {
+    font-family: Futura;
+    -webkit-font-smoothing: antialiased;
+    color: #0F2944;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 22px;
+}
+
+h5 {
+    color: #0F2944;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.nav-bar-placeholder {
+    background-color: cornsilk;
+    max-height: 5vh;
+    text-align: center;
+    padding: 2.5vh;
+}
+
+.applications-header-container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.applications {
+    width: 30vw;
+}
+
+.applications h2 {
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+
+.applications div {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.applications button {
+    color: #6593c1;
+    background-color: #CDE1F9;
+    border: 0;
+    cursor: pointer;
+    border-radius: 30px;
+    height: 41px;
+    width: 103px;
+    margin-bottom: 100px;
+}
+
+
+.pictures {
+    width: 30vw;
+    background-color: rgba(101, 147, 193, 0.6);
+}
+
+.applications-body-container {
+    width: 710px;
+    margin: 0 auto;
+}
+
+.applications-body-container>* {
+    display: block;
+    margin: 3vh 0;
+    padding-bottom: 3vh;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: rgba(101, 147, 193, 0.6);
+}
+
+
+.committee-section {
+    background-color: #F4F9FF;
+    padding: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+}
+
+.committee-section h5 {
+    margin-top: 0;
+}
+
+
+.applications-faqs {
+    border-bottom-style: none;
+}
+
+.applications-committees {
+    border-bottom-style: none;
+}
+
+.faq-section {
+    border-top-color: rgba(101, 147, 193, 0.6);
+    border-top-style: solid;
+    border-top-width: 1px;
+    transition: all 500ms;
+    padding: 25px;
+
+}
+
+.faq-section.closed {
+    background-color: #FFFFFF;
+}
+
+.faq-section.open {
+    background-color: #F4F9FF;
+}
+
+
+.faq-question-container {
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.faq-question-text {
+    font-weight: bold;
+    float: left;
+}
+
+.faq-question-icon {
+    transition: all 0.3s;
+    float: right;
+}
+
+.faq-question-icon.open {
+    transform: rotate(90deg);
+}
+
+.ReactCollapse--collapse {
+    margin-top: 25px;
+    transition: height 500ms;
+}
+
+.ReactCollapse--collapse div {
+    padding-top: 5px;
+}
+
+.faq-section:last-of-type {
+    border-bottom-color: rgba(101, 147, 193, 0.6);
+    border-bottom-style: solid;
+    border-bottom-width: 1px;
+}
