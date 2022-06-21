@@ -27,7 +27,7 @@ export default function Ambassadors() {
               <div className="horizontal-section">
                 <h2>Applications are Open!</h2>
                 <div>
-                  Become a PennApps campus ambassador today. Applications are due
+                  Become a PennApps Campus Ambassador today. Applications are due
                   June 24th at 11:59 PM EST
                 </div>
                 <br />
