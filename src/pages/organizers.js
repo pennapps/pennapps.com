@@ -1,9 +1,9 @@
 import * as React from 'react'
 import './organizers.css'
-import ApplicationsIntro from './organizers_components/ApplicationsIntro'
-import ApplicationsProcess from './organizers_components/ApplicationsProcess'
-import ApplicationsCommittees from './organizers_components/ApplicationsCommittees'
-import ApplicationsFAQs from './organizers_components/ApplicationsFAQs'
+import ApplicationsIntro from './components/ApplicationsIntro'
+import ApplicationsProcess from './components/ApplicationsProcess'
+import ApplicationsCommittees from './components/ApplicationsCommittees'
+import ApplicationsFAQs from './components/ApplicationsFAQs'
 
 export default function Organizers() {
   return (
