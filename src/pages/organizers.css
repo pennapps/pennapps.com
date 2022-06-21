@@ -39,6 +39,7 @@ h5 {
 .nav-bar-placeholder {
     background-color: cornsilk;
     max-height: 5vh;
+    max-width: 100vw;
     text-align: center;
     padding: 2.5vh;
 }
@@ -73,7 +74,6 @@ h5 {
     width: 103px;
     margin-bottom: 100px;
 }
-
 
 .pictures {
     width: 30vw;
