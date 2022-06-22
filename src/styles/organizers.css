@@ -75,9 +75,11 @@ h5 {
     margin-bottom: 100px;
 }
 
-.pictures {
+.logo-section {
+    display: flex;
+    flex-direction: column;
     width: 30vw;
-    background-color: rgba(101, 147, 193, 0.6);
+    vertical-align: middle;
 }
 
 .applications-body-container {

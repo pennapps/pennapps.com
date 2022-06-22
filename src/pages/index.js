@@ -5,6 +5,7 @@ import OrganizerCard from '../components/OrganizerCard'
 import '../styles/landing.css'
 import landingImage from '../images/landing-image.png'
 import timelineImage from '../images/timeline.png'
+import mobileTimelineImage from '../images/mobile-timeline.png'
 import Sai from '../images/organizers/sai.png'
 import Jason from '../images/organizers/jason.jpg'
 import Anna from '../images/organizers/anna.jpg'
@@ -12,7 +13,7 @@ import Anuj from '../images/organizers/anuj.jpg'
 import Audrey from '../images/organizers/audrey.jpg'
 import Cynthia from '../images/organizers/cynthia.png'
 import Heyi from '../images/organizers/heyi.jpg'
-import Joe from '../images/organizers/joe.jpg'
+import Joe from '../images/organizers/joe.png'
 import Mia from '../images/organizers/mia.png'
 import Qijia from '../images/organizers/qijia.jpeg'
 import Sylvia from '../images/organizers/sylvia.png'
@@ -47,7 +48,7 @@ export default function Index() {
       </div>
       <div className="landing-info">
         <div className="landing-info-text">Applications for PennAppsXXIII are open!</div>
-        <div><button className="landing-info-btn" type="button">GO TO SITE</button></div>
+        <div><button className="landing-info-btn" type="button">VIEW</button></div>
       </div>
       <div className="landing">
         <img className="landing-img" src={landingImage} alt="Landing Header Image" />
@@ -68,7 +69,19 @@ export default function Index() {
         </div>
         <div className="timeline">
           <h3>Event Timeline</h3>
-          <img className="timeline-img" src={timelineImage} alt="Timeline Image" />
+          <div className="timeline-img-wrapper">
+            <picture>
+              <source
+                media="(min-width: 680px)"
+                srcSet={timelineImage}
+              />
+              <img
+                src={mobileTimelineImage}
+                alt="Timeline Image"
+                className="timeline-img"
+              />
+            </picture>
+          </div>
         </div>
         <div className="organizers">
           <h3>Organizers</h3>

@@ -4,6 +4,7 @@ import ApplicationsIntro from '../components/ApplicationsIntro'
 import ApplicationsProcess from '../components/ApplicationsProcess'
 import ApplicationsCommittees from '../components/ApplicationsCommittees'
 import ApplicationsFAQs from '../components/ApplicationsFAQs'
+import logo from '../images/logo.png'
 
 export default function Organizers() {
   return (
@@ -17,8 +18,8 @@ export default function Organizers() {
           <div>Join the PennApps organizing team today</div>
           <button type="button">APPLY</button>
         </div>
-        <div className="pictures">
-          Illustration or exec pic here
+        <div className="logo-section">
+          <img className="logo" src={logo} alt="PennApps" />
         </div>
       </div>
       <div className="applications-body-container">

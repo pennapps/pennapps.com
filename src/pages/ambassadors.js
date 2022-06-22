@@ -2,6 +2,7 @@ import * as React from 'react'
 import { FaChevronRight } from '@react-icons/all-files/fa/FaChevronRight'
 import { FaChevronDown } from '@react-icons/all-files/fa/FaChevronDown'
 import Footer from '../components/Footer'
+import logo from '../images/logo.png'
 import '../styles/ambassadors.css'
 
 export default function Ambassadors() {
@@ -37,16 +38,8 @@ export default function Ambassadors() {
                 <button className="link-btn" type="button">Link</button>
               </div>
               <div className="horizontal-section">
-                <div className="image-section-placeholder">
-                  [illustration or exec pics here]
-                  {' '}
-                  <br />
-                  <br />
-                  <div>
-                    {' '}
-                    Writing on document? Folder with pennapps stuff coming out of
-                    it?
-                  </div>
+                <div className="logo-section">
+                  <img className="logo" src={logo} alt="PennApps" />
                 </div>
               </div>
             </div>
