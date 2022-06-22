@@ -35,6 +35,7 @@ html,body
   color: #6593C1;
   size: 16px;
   font-weight: 600;
+  margin-right: 30vw;
 }
 
 .landing-info-btn {
@@ -64,17 +65,29 @@ html,body
 }
 
 .timeline-img {
-  width: 49vw;
+  width: auto;
   height: auto;
+  max-height: 57vh;
+  /* max-width: 49vw; */
 }
 
 .organizers-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(4, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   grid-column-gap: 5px;
   grid-row-gap: 5px;
+  gap: 5 px;
+  grid-auto-rows: minmax(100px, auto);
 }
+
+@media (min-width: 960px) {
+  .organizers-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (min-width: 1120px) {
+  .organizers-grid { grid-template-columns: repeat(3, 1fr); }
+}
+
 
 .organizer-card {
   max-width: 20vw;

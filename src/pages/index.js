@@ -5,7 +5,19 @@ import OrganizerCard from '../components/OrganizerCard'
 import '../styles/landing.css'
 import landingImage from '../images/landing-image.png'
 import timelineImage from '../images/timeline.png'
-// import jasonImage from '../images/organizers/jason.jpg'
+import Sai from '../images/organizers/sai.png'
+import Jason from '../images/organizers/jason.jpg'
+import Anna from '../images/organizers/anna.jpg'
+import Anuj from '../images/organizers/anuj.jpg'
+import Audrey from '../images/organizers/audrey.jpg'
+import Cynthia from '../images/organizers/cynthia.png'
+import Heyi from '../images/organizers/heyi.jpg'
+import Joe from '../images/organizers/joe.jpg'
+import Mia from '../images/organizers/mia.png'
+import Qijia from '../images/organizers/qijia.jpeg'
+import Sylvia from '../images/organizers/sylvia.png'
+import Zachary from '../images/organizers/zachary.jpg'
+import Wenny from '../images/organizers/wenny.png'
 
 const organizers = {
   'Sai Mamidala': 'DIRECTOR',
@@ -22,6 +34,10 @@ const organizers = {
   'Wenny Cheng': 'MARKETING',
   'Zachary Huang-Ogata': 'SPONSORSHIP',
 }
+
+const pictures = [
+  Sai, Jason, Anna, Anuj, Audrey, Cynthia, Heyi, Joe, Mia, Qijia, Sylvia, Wenny, Zachary,
+]
 
 export default function Index() {
   return (
@@ -61,6 +77,8 @@ export default function Index() {
               <OrganizerCard
                 name={key}
                 title={organizers[key]}
+                idx={idx}
+                src={pictures[idx]}
               />
             ))}
           </div>
