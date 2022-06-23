@@ -52,7 +52,8 @@ function DrawerAppBar(props) {
         <Toolbar>
           <Typography
             variant="h6"
-            component="div"
+            component={Link}
+            to="/"
             sx={{
               flexGrow: 1,
               display: { xs: 'block', sm: 'block' },
@@ -60,13 +61,19 @@ function DrawerAppBar(props) {
               fontWeight: 600,
               letterSpacing: 2,
               color: '#0F2944',
+              textDecoration: 'none'
             }}
           >
             PENNAPPS
           </Typography>
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
             {navItems.map(item => (
-              <Button key={item} sx={{ color: '#0F2944', fontFamily: 'Proxima Nova' }}>
+              <Button
+                component={Link}
+                to={`/${item}`.toLowerCase()}
+                key={item}
+                sx={{ color: '#0F2944', fontFamily: 'Proxima Nova' }}
+              >
                 {item}
               </Button>
             ))}

@@ -1,6 +1,7 @@
 import * as React from 'react'
 import { FaChevronRight } from '@react-icons/all-files/fa/FaChevronRight'
 import { FaChevronDown } from '@react-icons/all-files/fa/FaChevronDown'
+import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import logo from '../images/logo.png'
 import '../styles/ambassadors.css'
@@ -21,9 +22,7 @@ export default function Ambassadors() {
 
   return (
     <div>
-      <div className="nav-bar-placeholder">
-        Nav Bar Placeholder
-      </div>
+      <Navbar />
       <div className="ambassador-section">
         <div className="header-section">
           <div>

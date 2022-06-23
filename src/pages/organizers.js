@@ -1,5 +1,6 @@
 import * as React from 'react'
 import '../styles/organizers.css'
+import Navbar from '../components/Navbar'
 import ApplicationsIntro from '../components/ApplicationsIntro'
 import ApplicationsProcess from '../components/ApplicationsProcess'
 import ApplicationsCommittees from '../components/ApplicationsCommittees'
@@ -9,9 +10,7 @@ import logo from '../images/logo.png'
 export default function Organizers() {
   return (
     <>
-      <div className="nav-bar-placeholder">
-        Nav Bar Placeholder
-      </div>
+      <Navbar />
       <div className="applications-header-container">
         <div className="applications">
           <h2>Applications are Open!</h2>
