@@ -2,6 +2,8 @@ import * as React from 'react'
 
 import Footer from '../components/Footer'
 import OrganizerCard from '../components/OrganizerCard'
+import Navbar from '../components/Navbar'
+
 import '../styles/landing.css'
 import landingImage from '../images/landing-image.png'
 import timelineImage from '../images/timeline.png'
@@ -43,9 +45,7 @@ const pictures = [
 export default function Index() {
   return (
     <div className="landing">
-      <div className="nav-bar-placeholder">
-        Nav Bar Placeholder
-      </div>
+      <Navbar />
       <div className="landing-info">
         <div className="landing-info-text">Applications for PennAppsXXIII are open!</div>
         <div><button className="landing-info-btn" type="button">VIEW</button></div>
