@@ -61,7 +61,7 @@ function DrawerAppBar(props) {
               fontWeight: 600,
               letterSpacing: 2,
               color: '#0F2944',
-              textDecoration: 'none'
+              textDecoration: 'none',
             }}
           >
             PENNAPPS

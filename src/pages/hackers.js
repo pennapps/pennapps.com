@@ -1,16 +1,37 @@
 import React, { useState } from 'react'
 import { Link } from 'gatsby'
 import { useSpring, animated } from 'react-spring'
+import Navbar from '../components/Navbar'
 import chevronImage from '../images/arrow-east.png'
-import iterationLogo from '../images/cloud_square_logo 1.png'
+import iterationLogo from '../images/iteration-logo-f22.png'
 import '../styles/hackers.css'
+
+const content = {
+  'Why PennApps?': `PennApps is the oldest and one of the largest hackathons hosted by college
+  students. Attending PennApps means a valuable experience in software development through
+  developing your project and attending workshops. More importantly, this is a place where hundreds
+  of passionate hackers get together to learn, connect, and inspire each other.`,
+  'Who can apply for PennApps?': `Students who are 15 or above + enrolled in or completed secondary
+  education.`,
+  'Do I need prior hackathon experience to apply?': 'Nope! We encourage everyone to apply.',
+  'What is the application process?': `We will open applications during mid-June on
+  apply.pennapps.com. You will be notified of the decision based on the time you submit. Please
+  refer to the timeline below to learn more about the process, and follow @pennapps on Instagram
+  for updates on application!`,
+  'How will my application be evaluated?': `We have a team of organizers reviewing your applications
+  on a rolling basis with a standardized rubric, taking into consideration both your written
+  responses and your portfolio.`,
+  'If PennApps is in-person, how does travel reimbursement look like?': `We will make decisions
+  about reimbursement on an individual basis.`,
+  'Do I have to have a team before I apply?': `No! You can apply as an individual and we will
+  facilitate team formation closer to the hackathon. However, you will have to submit a final
+  project in a team of 2-4 people.`,
+}
 
 export default function Hackers() {
   return (
     <div>
-      <div className="page-header">
-        <Header />
-      </div>
+      <Navbar />
       <div className="hackers-page">
         <div className="apply-logo-rect">
           <div className="apply-box">
@@ -30,14 +51,9 @@ export default function Hackers() {
           </div>
         </div>
         <h1 className="faq-text">FAQ</h1>
-        <div><QuestionCard questionHead="Why PennApps?" questionBody="PennApps is the oldest and one of the largest hackathons hosted by college students. Attending PennApps means a valuable experience in software development through developing your project and attending workshops. More importantly, this is a place where hundreds of passionate hackers get together to learn, connect, and inspire each other." /></div>
-        <div><QuestionCard questionHead="Question" questionBody="Answer" /></div>
-        <div><QuestionCard questionHead="Question" questionBody="Answer" /></div>
-        <div><QuestionCard questionHead="Question" questionBody="Answer" /></div>
-        <div><QuestionCard questionHead="Question" questionBody="Answer" /></div>
-        <div><QuestionCard questionHead="Question" questionBody="Answer" /></div>
-        <div><QuestionCard questionHead="Question" questionBody="Answer" /></div>
-        <hr className="topHR" />
+        {Object.keys(content).map(question => (
+          <QuestionCard questionHead={question} questionBody={content[question]} />
+        ))}
       </div>
     </div>
   )

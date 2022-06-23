@@ -4,7 +4,7 @@ import Footer from '../components/Footer'
 import OrganizerCard from '../components/OrganizerCard'
 import Navbar from '../components/Navbar'
 
-import '../styles/landing.css'
+import '../styles/home.css'
 import landingImage from '../images/landing-image.png'
 import timelineImage from '../images/timeline.png'
 import mobileTimelineImage from '../images/mobile-timeline.png'

@@ -1,5 +1,5 @@
 import * as React from 'react'
-import '../styles/landing.css'
+import '../styles/home.css'
 
 export default function OrganizerCard(props) {
   const { name, title, src } = props
