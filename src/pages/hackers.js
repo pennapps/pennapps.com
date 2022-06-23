@@ -30,31 +30,31 @@ const content = {
 
 export default function Hackers() {
   return (
-    <div>
+    <div className="background-wrapper">
       <Navbar />
-      <div className="hackers-page">
-        <div className="apply-logo-rect">
-          <div className="apply-box">
-            <h1 className="apply-header-text">Apply to PennApps XXIII!</h1>
-            <p>Applications are now open</p>
+        <div className="hackers-section">
+          <div className="apply-logo-rect">
+            <div className="apply-box">
+              <h1 className="apply-header-text">Apply to PennApps XXIII!</h1>
+              <p>Applications are now open</p>
+              <div>
+                <Link to="/dashboard">
+                  <button className="apply-button" type="button">APPLY</button>
+                </Link>
+                <Link to="/dashboard">
+                  <button className="apply-button" type="button">EVENT SITE</button>
+                </Link>
+              </div>
+            </div>
             <div>
-              <Link to="/dashboard">
-                <button className="apply-button" type="button">APPLY</button>
-              </Link>
-              <Link to="/dashboard">
-                <button className="apply-button" type="button">EVENT SITE</button>
-              </Link>
+              <img className="iteration-logo" src={iterationLogo} alt="Iteration Logo" />
             </div>
           </div>
-          <div>
-            <img className="iteration-logo" src={iterationLogo} alt="Iteration Logo" />
-          </div>
+          <h1 className="faq-text">FAQ</h1>
+          {Object.keys(content).map(question => (
+            <QuestionCard questionHead={question} questionBody={content[question]} />
+          ))}
         </div>
-        <h1 className="faq-text">FAQ</h1>
-        {Object.keys(content).map(question => (
-          <QuestionCard questionHead={question} questionBody={content[question]} />
-        ))}
-      </div>
     </div>
   )
 }
@@ -66,7 +66,7 @@ function QuestionCard({ questionHead, questionBody }) {
     <div>
       <hr className="topHR" />
       <div className="card-header">
-        <h1 className="question-text">{questionHead}</h1>
+        <h3 className="question-text">{questionHead}</h3>
         <RotatingChevron isOpen={isOpen} setOpen={setOpen} />
       </div>
       <div>
