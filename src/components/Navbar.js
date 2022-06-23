@@ -12,6 +12,7 @@ import MenuIcon from '@mui/icons-material/Menu'
 import Toolbar from '@mui/material/Toolbar'
 import Typography from '@mui/material/Typography'
 import Button from '@mui/material/Button'
+import { Link } from 'gatsby'
 
 const drawerWidth = 240
 const navItems = ['HACKERS', 'ORGANIZERS', 'AMBASSADORS']
@@ -25,22 +26,16 @@ function DrawerAppBar(props) {
   }
 
   const drawer = (
-    <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
-      <Typography
-        variant="h6"
-        sx={{
-          my: 2,
-          fontFamily: 'Futura',
-          fontWeight: 'bold',
-        }}
-      >
-        PENNAPPS
-      </Typography>
-      <Divider />
+    <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center', bgcolor: '#F0F7FF' }}>
       <List>
+        <ListItem key="HOME" disablePadding>
+          <ListItemButton component={Link} to="/" sx={{ textAlign: 'left' }}>
+            <ListItemText primary="HOME" />
+          </ListItemButton>
+        </ListItem>
         {navItems.map(item => (
           <ListItem key={item} disablePadding>
-            <ListItemButton sx={{ textAlign: 'center' }}>
+            <ListItemButton component={Link} to={`/${item}`.toLowerCase()} sx={{ textAlign: 'left' }}>
               <ListItemText primary={item} />
             </ListItemButton>
           </ListItem>
@@ -60,7 +55,7 @@ function DrawerAppBar(props) {
             component="div"
             sx={{
               flexGrow: 1,
-              display: { xs: 'none', sm: 'block' },
+              display: { xs: 'block', sm: 'block' },
               fontFamily: 'Futura',
               fontWeight: 600,
               letterSpacing: 2,
@@ -76,15 +71,17 @@ function DrawerAppBar(props) {
               </Button>
             ))}
           </Box>
-          <IconButton
-            color="inherit"
-            aria-label="open drawer"
-            edge="end"
-            onClick={handleDrawerToggle}
-            sx={{ display: { sm: 'none' } }}
-          >
-            <MenuIcon edge="end" sx={{ color: '#0F2944' }} />
-          </IconButton>
+          <Box sx={{ display: { sm: 'none' }, color: '#0F2944' }}>
+            <IconButton
+              color="inherit"
+              aria-label="open drawer"
+              edge="end"
+              onClick={handleDrawerToggle}
+              sx={{ flexGrow: 1 }}
+            >
+              <MenuIcon />
+            </IconButton>
+          </Box>
         </Toolbar>
       </AppBar>
       <Box component="nav">
@@ -99,9 +96,11 @@ function DrawerAppBar(props) {
           }}
           sx={{
             display: {
-              xs: 'block', sm: 'none', marginLeft: 'auto', textAlign: 'left',
+              xs: 'block', sm: 'none', marginLeft: 'auto',
             },
-            '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth },
+            '& .MuiDrawer-paper': {
+              boxSizing: 'border-box', width: drawerWidth, bgcolor: '#F0F7FF', color: '#6593C1',
+            },
           }}
         >
           {drawer}
