@@ -3,7 +3,7 @@ import { FaChevronRight } from '@react-icons/all-files/fa/FaChevronRight'
 import { FaChevronDown } from '@react-icons/all-files/fa/FaChevronDown'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
-import logo from '../images/logo.png'
+import logo from '../images/applications-open.svg'
 import '../styles/ambassadors.css'
 
 export default function Ambassadors() {
@@ -112,7 +112,12 @@ export default function Ambassadors() {
           <div className="faqs">
             <h3>FAQS</h3>
             <hr />
-            <button type="button" className="faqs-container" onClick={() => setShowQ1(!showQ1)} style={{ backgroundColor: expandedSectionColor(showQ1) }}>
+            <button
+              type="button"
+              className="faqs-container"
+              onClick={() => setShowQ1(!showQ1)}
+              style={{ backgroundColor: expandedSectionColor(showQ1) }}
+            >
               <div className="horizontal-align">
                 <button
                   type="button"
@@ -120,7 +125,11 @@ export default function Ambassadors() {
                 >
                   <div className="faq-content">
                     <div className="question">When will applications open and close?</div>
-                    {showQ1 ? <section className="answer">Applications will open early June and will close mid-June. We will send out results shortly after the application closes.</section> : ''}
+                    {showQ1 ? (
+                      <section className="answer">
+                        Applications will open early June and will close mid-June. We will send out results shortly after the application closes.
+                      </section>
+                    ) : ''}
                   </div>
                 </button>
                 <div
@@ -131,7 +140,12 @@ export default function Ambassadors() {
               </div>
             </button>
             <hr />
-            <button type="button" className="faqs-container" onClick={() => setShowQ2(!showQ2)} style={{ backgroundColor: expandedSectionColor(showQ2) }}>
+            <button
+              type="button"
+              className="faqs-container"
+              onClick={() => setShowQ2(!showQ2)}
+              style={{ backgroundColor: expandedSectionColor(showQ2) }}
+            >
               <div className="horizontal-align">
                 <button
                   type="button"
@@ -150,7 +164,12 @@ export default function Ambassadors() {
               </div>
             </button>
             <hr />
-            <button type="button" className="faqs-container" onClick={() => setShowQ3(!showQ3)} style={{ backgroundColor: expandedSectionColor(showQ3) }}>
+            <button
+              type="button"
+              className="faqs-container"
+              onClick={() => setShowQ3(!showQ3)}
+              style={{ backgroundColor: expandedSectionColor(showQ3) }}
+            >
               <div className="horizontal-align">
                 <button
                   type="button"
@@ -169,7 +188,12 @@ export default function Ambassadors() {
               </div>
             </button>
             <hr />
-            <button type="button" className="faqs-container" onClick={() => setShowQ4(!showQ4)} style={{ backgroundColor: expandedSectionColor(showQ4) }}>
+            <button
+              type="button"
+              className="faqs-container"
+              onClick={() => setShowQ4(!showQ4)}
+              style={{ backgroundColor: expandedSectionColor(showQ4) }}
+            >
               <div className="horizontal-align">
                 <button
                   type="button"
