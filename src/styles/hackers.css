@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css?family=Proxima+Nova');
 
-html, body
+html, body, #___gatsby, #gatsby-focus-wrapper
 {
     width: 100%;
     height: 100%;
-    min-height: 100%;
+    min-height: 100% !important;
     margin: 0px;
     padding: 0px;
     overflow-x: hidden;
@@ -12,7 +12,7 @@ html, body
 }
 
 .background-wrapper {
-    /* background-color: #FAF5E7; */
+    background-color: #FAF5E7;
     min-height: 100%;
     margin: 0;
     padding: 0;
@@ -23,6 +23,7 @@ html, body
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  padding: 25px;
 }
 
 .chevron {
@@ -74,7 +75,9 @@ h1 {
     margin-block-end: 0;
     margin-inline-start: 0;
     margin-inline-end: 0;
-    border-width: 2px;
+    border-width: 1px;
+    border-style: solid;
+    color: #1F4A3899;
 }
 
 .faq-text {
@@ -85,11 +88,26 @@ h1 {
     margin-inline-end: 0;
 }
 
+.question-container {
+    /* padding: 25px; */
+}
+
 .question-text {
+    font-family: "Proxima Nova";
+    color: #1F4A38;
     margin-block-start: 0.2em;
     margin-block-end: 0.2em;
     margin-inline-start: 0;
     margin-inline-end: 0;
+}
+
+.question-container:hover {
+    cursor: pointer;
+}
+
+.answer-text {
+    margin-inline-start: 25px;
+    margin-inline-end: 25px;
 }
 
 .apply-button {
@@ -98,6 +116,7 @@ h1 {
     width: 103px;
     height: 41px;
     margin:0 0.1em 0.1em 0;
+    border: 0;
     margin-right: 0.75em;
     border-radius:20px;
     text-decoration:none;
@@ -105,6 +124,10 @@ h1 {
     color:#F1ECDE;
     text-align:center;
     transition: all 0.2s;
+}
+
+.apply-button:hover {
+    cursor: pointer;
 }
 
 .header {

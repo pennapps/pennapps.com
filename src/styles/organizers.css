@@ -47,6 +47,7 @@ h5 {
 .applications-header-container {
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
 }
 
 .applications {
@@ -68,12 +69,17 @@ h5 {
     color: #6593c1;
     background-color: #CDE1F9;
     border: 0;
-    cursor: pointer;
     border-radius: 30px;
     height: 41px;
     width: 103px;
     margin-bottom: 100px;
 }
+
+.applications button:hover {
+    background-color: #6593C1;
+    color: #CDE1F9;
+    cursor: pointer;
+  }
 
 .logo-section {
     display: flex;

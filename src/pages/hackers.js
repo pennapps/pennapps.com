@@ -32,29 +32,29 @@ export default function Hackers() {
   return (
     <div className="background-wrapper">
       <Navbar />
-        <div className="hackers-section">
-          <div className="apply-logo-rect">
-            <div className="apply-box">
-              <h1 className="apply-header-text">Apply to PennApps XXIII!</h1>
-              <p>Applications are now open</p>
-              <div>
-                <Link to="/dashboard">
-                  <button className="apply-button" type="button">APPLY</button>
-                </Link>
-                <Link to="/dashboard">
-                  <button className="apply-button" type="button">EVENT SITE</button>
-                </Link>
-              </div>
-            </div>
+      <div className="hackers-section">
+        <div className="apply-logo-rect">
+          <div className="apply-box">
+            <h1 className="apply-header-text">Apply to PennApps XXIII!</h1>
+            <p>Applications are now open</p>
             <div>
-              <img className="iteration-logo" src={iterationLogo} alt="Iteration Logo" />
+              <Link to="/">
+                <button className="apply-button" type="button">APPLY</button>
+              </Link>
+              <Link to="/">
+                <button className="apply-button" type="button">EVENT SITE</button>
+              </Link>
             </div>
           </div>
-          <h1 className="faq-text">FAQ</h1>
-          {Object.keys(content).map(question => (
-            <QuestionCard questionHead={question} questionBody={content[question]} />
-          ))}
+          <div>
+            <img className="iteration-logo" src={iterationLogo} alt="Iteration Logo" />
+          </div>
         </div>
+        <h1 className="faq-text">FAQs</h1>
+        {Object.keys(content).map(question => (
+          <QuestionCard questionHead={question} questionBody={content[question]} />
+        ))}
+      </div>
     </div>
   )
 }
@@ -63,13 +63,19 @@ function QuestionCard({ questionHead, questionBody }) {
   const [isOpen, setOpen] = useState(false)
 
   return (
-    <div>
+    <div
+      className="question-container"
+      onClick={() => setOpen(!isOpen)}
+      role="button"
+      onKeyPress={() => setOpen(!isOpen)}
+      tabIndex={0}
+    >
       <hr className="topHR" />
       <div className="card-header">
         <h3 className="question-text">{questionHead}</h3>
         <RotatingChevron isOpen={isOpen} setOpen={setOpen} />
       </div>
-      <div>
+      <div className="answer-text">
         {isOpen && (<SlidingText isOpen={isOpen} setOpen={setOpen} text={questionBody} />)}
       </div>
     </div>
@@ -77,14 +83,7 @@ function QuestionCard({ questionHead, questionBody }) {
 }
 
 function RotatingChevron({ isOpen, setOpen }) {
-  const [rotateChevron, setRotateChevron] = useState(false)
-
-  const handleRotate = () => {
-    setRotateChevron(!rotateChevron)
-    setOpen(!isOpen)
-  }
-
-  const rotate = rotateChevron ? 'rotate(90deg)' : 'rotate(0)'
+  const rotate = isOpen ? 'rotate(90deg)' : 'rotate(0)'
 
   return (
     <input
@@ -93,7 +92,7 @@ function RotatingChevron({ isOpen, setOpen }) {
       style={{ transform: rotate, transition: 'all 0.05s linear' }}
       src={chevronImage}
       alt="Click"
-      onClick={handleRotate}
+      onClick={() => setOpen(!isOpen)}
     />
   )
 }

@@ -34,7 +34,7 @@ export default function Ambassadors() {
                   June 24th at 11:59 PM EST
                 </div>
                 <br />
-                <button className="link-btn" type="button">Link</button>
+                <button className="link-btn" type="button">APPLY</button>
               </div>
               <div className="horizontal-section">
                 <div className="logo-section">
@@ -62,7 +62,7 @@ export default function Ambassadors() {
               </p>
               <p>
                 You will also be part of the PennApps team and receive cool perks
-                includign priority admission to PennApps XXIII, PennApps swag,
+                including priority admission to PennApps XXIII, PennApps swag,
                 merch, and a shoutout from our social media!
               </p>
             </div>
