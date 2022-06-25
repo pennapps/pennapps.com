@@ -24,31 +24,22 @@ Below is the default Gatsby welcome page.
 
 ## 🚀 Quick start
 
-1.  **Create a Gatsby site. (NO NEED TO DO THIS)**
-
-    Use the Gatsby CLI to create a new site, specifying the minimal starter.
-
-    ```shell
-    # create a new Gatsby site using the minimal starter
-    npm init gatsby
-    ```
-
-2.  **Start developing.**
+1.  **Start developing.**
 
     Navigate into your new site’s directory and start it up.
 
     ```shell
-    cd my-gatsby-site/
-    npm run develop
+    cd pennapps.com/
+    gatsby develop
     ```
 
-3.  **Open the code and start customizing!**
+2.  **Open the code and start customizing!**
 
     Your site is now running at http://localhost:8000!
 
-    Edit your page in `src/pages/yourFile.js` to see your site update in real-time!
+    Edit your page in `src/pages/index.js` to see your site update in real-time!
 
-4.  **Learn more**
+3.  **Learn more**
 
     - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
 
