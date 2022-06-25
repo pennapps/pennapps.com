@@ -39,6 +39,7 @@ Below is the default Gatsby welcome page.
 
     Edit your page in `src/pages/index.js` to see your site update in real-time!
 
+
 3.  **Learn more**
 
     - [Documentation](https://www.gatsbyjs.com/docs/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
@@ -53,3 +54,6 @@ Below is the default Gatsby welcome page.
 
     - [Cheat Sheet](https://www.gatsbyjs.com/docs/cheat-sheet/?utm_source=starter&utm_medium=readme&utm_campaign=minimal-starter)
 
+4. **For Dev heads only**
+
+    To deploy, run `gatsby clean` followed by `npm run deploy` on the main branch. That's all.
