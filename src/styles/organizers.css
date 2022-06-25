@@ -17,7 +17,6 @@ h2 {
     -webkit-font-smoothing: antialiased;
     color: #0F2944;
     font-size: 26px;
-
 }
 
 h3 {
@@ -48,15 +47,7 @@ h5 {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-}
-
-.applications {
-    width: 30vw;
-}
-
-.applications h2 {
-    margin-top: 100px;
-    margin-bottom: 20px;
+    height: 30vw;
 }
 
 .applications div {
@@ -81,11 +72,11 @@ h5 {
     cursor: pointer;
   }
 
-.logo-section {
+.organizers-logo-section {
     display: flex;
     flex-direction: column;
-    width: 30vw;
     vertical-align: middle;
+    width: 30vw;
 }
 
 .applications-body-container {

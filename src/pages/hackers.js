@@ -35,15 +35,15 @@ export default function Hackers() {
       <div className="hackers-section">
         <div className="apply-logo-rect">
           <div className="apply-box">
-            <h1 className="apply-header-text">Apply to PennApps XXIII!</h1>
+            <h1 className="apply-header-text">Apply to PennAppsXXIII!</h1>
             <p>Applications are now open</p>
             <div>
-              <Link to="/">
+              <a href="http://apply.pennapps.com/">
                 <button className="apply-button" type="button">APPLY</button>
-              </Link>
-              <Link to="/">
+              </a>
+              <a href="https://2022f.pennapps.com/">
                 <button className="apply-button" type="button">EVENT SITE</button>
-              </Link>
+              </a>
             </div>
           </div>
           <div>

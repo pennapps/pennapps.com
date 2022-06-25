@@ -3,10 +3,13 @@ import { FaChevronRight } from '@react-icons/all-files/fa/FaChevronRight'
 import { FaChevronDown } from '@react-icons/all-files/fa/FaChevronDown'
 import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
-import logo from '../images/applications-open.svg'
+import ApplicationsOpenSvg from '../images/applications-open.svg'
+import ApplicationsClosedSvg from '../images/applications-closed.svg'
 import '../styles/ambassadors.css'
 
 export default function Ambassadors() {
+  // change this if CA Applications are open or closed
+  const applicationsOpen = false
   const [showQ1, setShowQ1] = React.useState(false)
   const [showQ2, setShowQ2] = React.useState(false)
   const [showQ3, setShowQ3] = React.useState(false)
@@ -27,18 +30,31 @@ export default function Ambassadors() {
         <div className="header-section">
           <div>
             <div className="horizontal-align">
-              <div className="horizontal-section">
-                <h2>Applications are Open!</h2>
-                <div>
-                  Become a PennApps Campus Ambassador today. Applications are due
-                  June 24th at 11:59 PM EST
+              {applicationsOpen ? (
+                <div className="horizontal-section">
+                  <h2>Applications are Open!</h2>
+                  <div>
+                    Become a PennApps Campus Ambassador today. Applications are due
+                    June 24th at 11:59 PM EST
+                  </div>
+                  <br />
+                  <button className="link-btn" type="button">APPLY</button>
                 </div>
-                <br />
-                <button className="link-btn" type="button">APPLY</button>
-              </div>
+              ) : (
+                <div className="horizontal-section">
+                  <h2>Applications are Closed</h2>
+                  <div>
+                    PennApps Campus Ambassador applications were due
+                    June 24th at 11:59 PM EST.
+                    <br />
+                    Keep an eye out for next year!
+                  </div>
+                  <br />
+                </div>
+              )}
               <div className="horizontal-section">
                 <div className="logo-section">
-                  <img className="logo" src={logo} alt="PennApps" />
+                  {applicationsOpen ? (<ApplicationsOpenSvg />) : (<ApplicationsClosedSvg />)}
                 </div>
               </div>
             </div>

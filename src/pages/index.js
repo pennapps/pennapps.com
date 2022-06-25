@@ -48,10 +48,14 @@ export default function Index() {
       <Navbar />
       <div className="landing-info">
         <div className="landing-info-text">Applications for PennAppsXXIII are open!</div>
-        <div><button className="landing-info-btn" type="button">VIEW</button></div>
+        <div>
+          <a href="http://apply.pennapps.com/">
+            <button className="landing-info-btn" type="button">VIEW</button>
+          </a>
+        </div>
       </div>
       <div className="landing">
-        <img className="landing-img" src={landingImage} alt="Landing Header Image" />
+        <img className="landing-img" src={landingImage} alt="Landing Header" />
       </div>
       <div className="landing-page-container">
         <div className="about-pennapps">
@@ -82,6 +86,7 @@ export default function Index() {
               />
             </picture>
           </div>
+          <p>Reach out to contact@pennapps.com if you have any questions!</p>
         </div>
         <div className="organizers">
           <h3>Organizers</h3>

@@ -6,7 +6,8 @@ html,body
     height: 100%;
     margin: 0px;
     padding: 0px;
-    overflow-x: hidden; 
+    overflow-x: hidden;
+    justify-items: center;
 }
 
 .landing {
@@ -70,7 +71,8 @@ html,body
     width: 82vw;
   }
   .timeline-img {
-    max-width: 82vw;
+    max-width: 90vw;
+    width: 90vw;
   }
 }
 
@@ -82,11 +84,10 @@ html,body
 .timeline-img {
   width: auto;
   height: auto;
-  max-width: 49vw;
 }
 
 @media (min-width: 680px) {
-  .timeline-img { min-width: 610px; }
+  .timeline-img { min-width: 610px; max-width: 49vw; }
 }
 
 .organizers-grid {

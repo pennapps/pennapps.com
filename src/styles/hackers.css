@@ -201,3 +201,12 @@ h1 {
     align-items: center;
     width: 49vw;
 }
+
+@media (max-width: 960px) {
+    .hackers-section {
+        width: 82vw;
+    }
+    .apply-logo-rect {
+        width: 82vw;
+    }
+}

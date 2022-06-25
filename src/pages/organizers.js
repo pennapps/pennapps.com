@@ -5,20 +5,30 @@ import ApplicationsIntro from '../components/ApplicationsIntro'
 import ApplicationsProcess from '../components/ApplicationsProcess'
 import ApplicationsCommittees from '../components/ApplicationsCommittees'
 import ApplicationsFAQs from '../components/ApplicationsFAQs'
-import logo from '../images/logo.png'
+import Logo from '../images/logo.svg'
 
 export default function Organizers() {
+  // change this if Organizer Applications are open or closed
+  const applicationsOpen = false
+
   return (
     <>
       <Navbar />
       <div className="applications-header-container">
-        <div className="applications">
-          <h2>Applications are Open!</h2>
-          <div>Join the PennApps organizing team today</div>
-          <button type="button">APPLY</button>
-        </div>
-        <div className="logo-section">
-          <img className="logo" src={logo} alt="PennApps" />
+        {applicationsOpen ? (
+          <div className="applications">
+            <h2>Applications are Open!</h2>
+            <div>Join the PennApps organizing team today</div>
+            <button type="button">APPLY</button>
+          </div>
+        ) : (
+          <div className="applications">
+            <h2>Applications are Closed</h2>
+            <div>Stay tuned...</div>
+          </div>
+        )}
+        <div className="organizers-logo-section">
+          <Logo />
         </div>
       </div>
       <div className="applications-body-container">
