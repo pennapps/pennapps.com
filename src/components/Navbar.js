@@ -32,6 +32,11 @@ function DrawerAppBar(props) {
             <ListItemText primary="HOME" />
           </ListItemButton>
         </ListItem>
+        <ListItem key={'PENNAPPS XXIII'} disablePadding>
+            <ListItemButton href={'https://2022f.pennapps.com/'} sx={{ textAlign: 'left' }}>
+              <ListItemText primary={'PENNAPPS XXIII'} />
+            </ListItemButton>
+          </ListItem>
         {navItems.map(item => (
           <ListItem key={item} disablePadding>
             <ListItemButton component={Link} to={`/${item}`.toLowerCase()} sx={{ textAlign: 'left' }}>
@@ -66,6 +71,13 @@ function DrawerAppBar(props) {
             PENNAPPS
           </Typography>
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
+            <Button
+              href={"https://2022f.pennapps.com/"}
+              key={'PENNAPPS XXIII'}
+              sx={{ color: '#0F2944', fontFamily: 'Proxima Nova' }}  
+            >
+              {'PENNAPPS XXIII'}
+            </Button>
             {navItems.map(item => (
               <Button
                 component={Link}
