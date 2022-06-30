@@ -4,7 +4,6 @@
   </a>
 </p>
 
-## Notes from Joe:
 
 Welcome to the PennApps Dev Team! To contribute to this Git repository:
 
