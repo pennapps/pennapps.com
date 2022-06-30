@@ -5,7 +5,7 @@
 </p>
 
 
-Welcome to the PennApps Dev Team! To contribute to this Git repository:
+Welcome to the PennApps.com GitHub repo! To contribute to this Git repository:
 
   - Create a new branch named roughly after what you're implementing
   - Commit and push up your changes (to your branch)
