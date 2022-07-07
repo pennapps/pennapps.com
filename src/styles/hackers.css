@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Proxima+Nova');
+@import "fonts.css";
 
 html, body, #___gatsby, #gatsby-focus-wrapper
 {
@@ -41,16 +41,6 @@ h1 {
     align-items: center;
 }
 
-@font-face {
-    font-family: "ProximaNova";
-    src: url("./fonts/ProximaNovaNormal.woff2") format('woff2');
-}
-
-@font-face {
-    font-family: "ProximaNovaBold";
-    src: url("./fonts/ProximaNovaBold.woff") format('woff');
-}
-
 .hackers-section {
     width: 49vw;
     margin: 0 auto;
@@ -67,7 +57,8 @@ h1 {
 }
 
 .apply-header-text {
-    font-family: "ProximaNovaBold";
+    font-family: "Futura PT";
+    font-weight: 600;
 }
 
 .topHR {
@@ -81,15 +72,12 @@ h1 {
 }
 
 .faq-text {
-    font-family: "ProximaNovaBold";
+    font-family: "Futura PT";
+    font-weight: 600;
     margin-block-start: 0;
     margin-block-end: 0;
     margin-inline-start: 0;
     margin-inline-end: 0;
-}
-
-.question-container {
-    /* padding: 25px; */
 }
 
 .question-text {
@@ -140,7 +128,8 @@ h1 {
 }
 
 .pennapps-button {
-    font-family: "ProximaNovaBold";
+    font-family: "Proxima Nova";
+    font-weight: 700;
     display:inline-block;
     padding:0.3em 1.2em;
     margin:0 0.1em 0.1em 0;
@@ -171,7 +160,8 @@ h1 {
 }
 
 .header-bold-button {
-    font-family: "ProximaNovaBold";
+    font-family: "Proxima Nova";
+    font-weight: 700;
     display:inline-block;
     padding:0.3em 1.2em;
     margin:0 0.1em 0.1em 0;

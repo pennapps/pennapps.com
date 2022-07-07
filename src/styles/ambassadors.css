@@ -1,6 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Proxima+Nova');
-
-@import url('https://fonts.googleapis.com/css?family=PT+Sans');
+@import "fonts.css";
 
 h4 {
   margin: 0;
@@ -89,7 +87,7 @@ hr {
   width: 100%;
   text-align: left;
   font-size: 15px;
-  font-family: "Proxima Nova", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Proxima Nova";
   line-height: 1.5;
   background: none;
 }
