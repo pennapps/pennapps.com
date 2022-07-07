@@ -27,24 +27,24 @@ workbox.core.clientsClaim();
  */
 self.__precacheManifest = [
   {
-    "url": "webpack-runtime-70badbd73d8deab8e92d.js"
+    "url": "webpack-runtime-8abc1ac7bb98d1206cf3.js"
   },
   {
     "url": "framework-bc9ca1d2e20614b36b25.js"
   },
   {
-    "url": "app-470fd333500f483b9a3d.js"
+    "url": "app-373ffb081feb7b87502a.js"
   },
   {
     "url": "offline-plugin-app-shell-fallback/index.html",
-    "revision": "b2f49e98ffa570a1ce9def3a718b9c51"
+    "revision": "e536f6c4e62b85df910ff4867683091b"
   },
   {
     "url": "polyfill-4b59c96585f810a734f1.js"
   },
   {
     "url": "manifest.webmanifest",
-    "revision": "b8fb77d61c5a316c20105b2da0d56fc5"
+    "revision": "abf22a6c38f5e489ab6c3692893723fd"
   }
 ].concat(self.__precacheManifest || []);
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
@@ -149,12 +149,12 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
   lastNavigationRequest = event.request.url
 
   let { pathname } = new URL(event.request.url)
-  pathname = pathname.replace(new RegExp(`^/pennapps.com`), ``)
+  pathname = pathname.replace(new RegExp(`^`), ``)
 
   // Check for resources + the app bundle
   // The latter may not exist if the SW is updating to a new version
   const resources = await idbKeyval.get(`resources:${pathname}`)
-  if (!resources || !(await caches.match(`/pennapps.com/app-470fd333500f483b9a3d.js`))) {
+  if (!resources || !(await caches.match(`/app-373ffb081feb7b87502a.js`))) {
     return await fetch(event.request)
   }
 
@@ -167,7 +167,7 @@ const navigationRoute = new NavigationRoute(async ({ event }) => {
     }
   }
 
-  const offlineShell = `/pennapps.com/offline-plugin-app-shell-fallback/index.html`
+  const offlineShell = `/offline-plugin-app-shell-fallback/index.html`
   const offlineShellWithKey = workbox.precaching.getCacheKeyForURL(offlineShell)
   return await caches.match(offlineShellWithKey)
 })
