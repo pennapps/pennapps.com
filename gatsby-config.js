@@ -1,9 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `pennapps.com-redesign`,
+    title: `pennapps.com`,
     siteUrl: `https://pennapps.com/`,
   },
-  pathPrefix: '/pennapps.com-redesign',
   plugins: [
     {
       resolve: 'gatsby-plugin-react-svg',
@@ -17,6 +16,7 @@ module.exports = {
         icon: 'src/favicon.svg',
       },
     },
+    `gatsby-plugin-cname`,
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-offline`,
   ],
