@@ -49,7 +49,7 @@ export default function Index() {
       <div className="landing-info">
         <div className="landing-info-text">Applications for PennAppsXXIII are open!</div>
         <div>
-          <a href="http://apply.pennapps.com/">
+          <a href="http://2022f.pennapps.com/">
             <button className="landing-info-btn" type="button">VIEW</button>
           </a>
         </div>
