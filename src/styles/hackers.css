@@ -31,7 +31,7 @@ html, body, #___gatsby, #gatsby-focus-wrapper
 }
 
 h1 {
-    font-family: 'Futura PT';
+    font-family: "Futura PT", "Futura", "Trebuchet MS", "Arial", "sans-serif";
     font-style: normal;
     -webkit-font-smoothing: antialiased;
     font-weight: 600;
@@ -57,7 +57,7 @@ h1 {
 }
 
 .apply-header-text {
-    font-family: "Futura PT";
+    font-family: "Futura PT", "Futura", "Trebuchet MS", "Arial", "sans-serif";
     font-weight: 600;
 }
 
@@ -72,7 +72,7 @@ h1 {
 }
 
 .faq-text {
-    font-family: "Futura PT";
+    font-family: "Futura PT", "Futura", "Trebuchet MS", "Arial", "sans-serif";
     font-weight: 600;
     margin-block-start: 0;
     margin-block-end: 0;
