@@ -9,7 +9,7 @@ import Logo from '../images/logo.svg'
 
 export default function Organizers() {
   // change this if Organizer Applications are open or closed
-  const applicationsOpen = true
+  const applicationsOpen = false
 
   return (
     <>
