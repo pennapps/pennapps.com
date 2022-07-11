@@ -7,8 +7,10 @@ export default function FAQSection({ q, a }) {
   const [open, setOpen] = useState(false)
 
   return (
-    <div className={`faq-section ${open ? 'open' : 'closed'}`}>
-      <div className="faq-question-container" onClick={() => setOpen(!open)}>
+    <div
+      className={`faq-section ${open ? 'open' : 'closed'}`}
+      onClick={() => setOpen(!open)}>
+      <div className="faq-question-container">
         <div className="faq-question-text">{q}</div>
         <img className={`faq-question-icon ${open ? 'open' : 'closed'}`} src={CollapseArrow} />
       </div>
