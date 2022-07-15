@@ -50,10 +50,11 @@ h5 {
     height: 30vw;
 }
 
-.applications div {
+.applications {
     margin-top: 20px;
     margin-bottom: 20px;
     font-size: 20px;
+    max-width: 40vw;
 }
 
 .applications button {
@@ -84,14 +85,21 @@ h5 {
     margin: 0 auto;
 }
 
-.applications-body-container>* {
+.applications-body-container {
     display: block;
-    margin: 3vh 0;
+    margin: auto;
     padding-bottom: 3vh;
     border-bottom-width: 1px;
     border-bottom-style: solid;
     border-bottom-color: rgba(101, 147, 193, 0.6);
+    width: 55vw;
 }
+
+@media only screen and (max-width: 600px) {
+    .applications-body-container {
+        width: 70%;
+    }
+  }
 
 
 .committee-section {
