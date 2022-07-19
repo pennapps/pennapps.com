@@ -94,6 +94,10 @@ html,body
   height: auto;
 }
 
+@media (max-width: 530px) {
+  .landing-info-text { margin-right: 40vw; }
+}
+
 @media (min-width: 680px) {
   .timeline-img { min-width: 610px; max-width: 49vw; }
 }
