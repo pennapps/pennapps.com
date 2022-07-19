@@ -48,9 +48,9 @@ export default function Index() {
       <Navbar />
       <div className="landing-info">
         <div className="landing-info-text">Applications for PennAppsXXIII are open!</div>
-        <div>
+        <div className='landing-info-btn-container'>
           <a href="http://2022f.pennapps.com/">
-            <button className="landing-info-btn" type="button">VIEW</button>
+            <button className="landing-info-btn" type="button">GO TO SITE</button>
           </a>
         </div>
       </div>

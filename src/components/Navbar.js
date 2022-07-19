@@ -66,6 +66,7 @@ function DrawerAppBar(props) {
               letterSpacing: 2,
               color: '#0F2944',
               textDecoration: 'none',
+              ml: '11px',
             }}
           >
             PENNAPPS
@@ -74,7 +75,7 @@ function DrawerAppBar(props) {
             <Button
               href={"https://2022f.pennapps.com/"}
               key={'PENNAPPS XXIII'}
-              sx={{ color: '#0F2944', fontFamily: 'Proxima Nova' }}  
+              sx={{ color: '#0F2944', fontFamily: 'Proxima Nova', mr: '13px' }}  
             >
               {'PENNAPPS XXIII'}
             </Button>
@@ -83,7 +84,7 @@ function DrawerAppBar(props) {
                 component={Link}
                 to={`/${item}`.toLowerCase()}
                 key={item}
-                sx={{ color: '#0F2944', fontFamily: 'Proxima Nova' }}
+                sx={{ color: '#0F2944', fontFamily: 'Proxima Nova', mr: '13px' }}
               >
                 {item}
               </Button>

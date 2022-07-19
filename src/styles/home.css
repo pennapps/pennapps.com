@@ -22,39 +22,46 @@ html,body
 
 .landing-info {
   position: relative;
-  vertical-align: middle;
+  vertical-align: text-top;
   display: flex;
   flex-direction: row;
   background-color: #F0F7FF;
   max-width: 100vw;
-  max-height: 5vh;
-  padding: 2.5vh;
+  padding: 15px;
+  justify-content: flex-end;
 }
 
 .landing-info-text {
-  align-items: left;
-  margin-left: 2%;
+  vertical-align: text-top;
   color: #6593C1;
   size: 16px;
   font-weight: 600;
-  margin-right: 30vw;
+  margin-left: 20px;
+  margin-right: auto;
 }
 
 .landing-info-btn {
-  position: absolute;
   cursor: pointer;
-  right: 35px;
-  top: 15%;
   color: #6593C1;
   font-weight: 600;
+  font-size: 12px;
+  letter-spacing: 0.02em;
   background-color: #F0F7FF;
   width: 103px;
-  height: 41px;
+  height: 34px;
   border-radius: 20px;
   border-color: #6593C1;
   border-style: solid;
   padding: 6px;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.landing-info-btn-container {
+  position: absolute;
+  display: flex;
+  align-content: center;
+  margin-right: 16px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 .landing-info-btn:hover {
