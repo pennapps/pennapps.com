@@ -33,7 +33,7 @@ hr {
 
 .horizontal-section {
   margin-top: 6%;
-  max-width: 30vw;
+  max-width: 40vw;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -69,8 +69,14 @@ hr {
 }
 
 .main-content {
-  width: 49vw;
+  width: 55vw;
   margin: auto;
+}
+
+@media only screen and (max-width: 600px) {
+  .main-content {
+      width: 70%;
+  }
 }
 
 .arrow-button {
