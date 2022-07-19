@@ -52,7 +52,7 @@ function DrawerAppBar(props) {
 
   return (
     <Box sx={{ display: 'flex' }}>
-      <AppBar component="nav" sx={{ bgcolor: 'white' }}>
+      <AppBar component="nav" sx={{ bgcolor: 'rgba(255, 255, 255, 0.8)' }} elevation={0}>
         <Toolbar>
           <Typography
             variant="h6"
