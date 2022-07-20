@@ -61,7 +61,7 @@ function DrawerAppBar(props) {
             sx={{
               flexGrow: 1,
               display: { xs: 'block', sm: 'block' },
-              fontFamily: 'Futura',
+              fontFamily: ['Futura', 'Trebuchet MS', 'Arial', 'sans-serif' ],
               fontWeight: 600,
               letterSpacing: 2,
               color: '#0F2944',

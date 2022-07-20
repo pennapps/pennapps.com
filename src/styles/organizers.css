@@ -13,14 +13,14 @@ div {
 }
 
 h2 {
-    font-family: Futura;
+    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     color: #0F2944;
     font-size: 26px;
 }
 
 h3 {
-    font-family: Futura;
+    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     color: #0F2944;
     margin-top: 30px;

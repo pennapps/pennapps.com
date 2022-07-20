@@ -34,7 +34,7 @@ body {
 }
 
 h1 {
-    font-family: "Futura PT", "Futura", "Trebuchet MS", "Arial", "sans-serif";
+    font-family: "Futura", "Trebuchet MS", "Arial", "sans-serif";
     font-style: normal;
     -webkit-font-smoothing: antialiased;
     font-weight: 600;
@@ -48,7 +48,7 @@ h1 {
     width: 49vw;
     margin: 0 auto;
     line-height: 1.5;
-    font-family: "Futura PT", "Futura", "Trebuchet MS", "Arial", "sans-serif";
+    font-family: "Futura", "Trebuchet MS", "Arial", "sans-serif";
     align-items: center;
 }
 
