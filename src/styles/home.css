@@ -8,7 +8,10 @@ html,body
     padding: 0px;
     overflow-x: hidden;
     justify-items: center;
-    color: #0F2944;
+}
+
+body {
+  color: #0F2944;
 }
 
 .landing {

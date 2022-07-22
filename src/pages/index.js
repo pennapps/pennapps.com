@@ -26,20 +26,20 @@ const organizers = {
   'Sai Mamidala': 'DIRECTOR',
   'Jason Hom': 'VICE DIRECTOR',
   'Anna Xia': 'OUTREACH',
-  'Anuj Kothari': 'LOGISTICS',
-  'Audrey Yang': 'DEV',
-  'Cynthia Adhiambo Otieno': 'SPONSORSHIP',
   'Heyi Liu': 'OUTREACH',
-  'Joe Konno': 'DEV',
-  'Mia Kim': 'CREATIVE',
+  'Anuj Kothari': 'LOGISTICS',
   'Qijia (Joy) Liu': 'LOGISTICS',
+  'Audrey Yang': 'DEV',
+  'Joe Konno': 'DEV',
+  'Cynthia Adhiambo Otieno': 'SPONSORSHIP',
+  'Zachary Huang-Ogata': 'SPONSORSHIP',
+  'Mia Kim': 'CREATIVE',
   'Sylvia Zhao': 'CREATIVE',
   'Wenny Cheng': 'MARKETING',
-  'Zachary Huang-Ogata': 'SPONSORSHIP',
 }
 
 const pictures = [
-  Sai, Jason, Anna, Anuj, Audrey, Cynthia, Heyi, Joe, Mia, Qijia, Sylvia, Wenny, Zachary,
+  Sai, Jason, Anna, Heyi, Anuj, Qijia, Audrey, Joe, Cynthia, Zachary, Mia, Sylvia, Wenny, 
 ]
 
 export default function Index() {
