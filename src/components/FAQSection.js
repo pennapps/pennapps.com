@@ -12,8 +12,8 @@ export default function FAQSection({ q, a }) {
       onClick={() => setOpen(!open)}>
       <div className="faq-question-container">
         <div className="faq-question-text">{q}</div>
-        <img className={`faq-question-icon ${open ? 'open' : 'closed'}`} src={CollapseArrow} />
       </div>
+      <img className={`faq-question-icon ${open ? 'open' : 'closed'}`} src={CollapseArrow} />
       <Collapse isOpened={open}>
         <div>
           <div>{a}</div>

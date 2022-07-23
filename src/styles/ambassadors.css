@@ -33,7 +33,7 @@ hr {
 
 .horizontal-section {
   margin-top: 6%;
-  max-width: 40vw;
+  max-width: 30vw;
   display: flex;
   justify-content: center;
   flex-direction: column;

@@ -1,6 +1,7 @@
 import * as React from 'react'
 import '../styles/organizers.css'
 import Navbar from '../components/Navbar'
+import Footer from '../components/Footer'
 import ApplicationsIntro from '../components/ApplicationsIntro'
 import ApplicationsProcess from '../components/ApplicationsProcess'
 import ApplicationsCommittees from '../components/ApplicationsCommittees'
@@ -38,6 +39,7 @@ export default function Organizers() {
         <ApplicationsCommittees />
         <ApplicationsFAQs />
       </div>
+      <Footer />
     </>
   )
 }
