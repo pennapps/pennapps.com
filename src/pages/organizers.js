@@ -16,9 +16,7 @@ export default function Organizers() {
     <>
       <Navbar />
       <div className="applications-header-container">
-        <div className="organizers-logo-section">
-          <Logo />
-        </div>
+        <Logo className="organizers-logo" />
         {applicationsOpen ? (
           <div className="applications">
             <h2>Applications are Open!</h2>
@@ -31,7 +29,6 @@ export default function Organizers() {
             <div>Stay tuned...</div>
           </div>
         )}
-
       </div>
       <div className="applications-body-container">
         <ApplicationsIntro />

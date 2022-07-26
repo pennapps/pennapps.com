@@ -67,17 +67,12 @@ h5 {
     cursor: pointer;
 }
 
-.organizers-logo-section {
+.organizers-logo {
     display: flex;
     flex-direction: column;
     vertical-align: middle;
     width: 30vw;
 }
-
-/* .applications-body-container {
-    width: 49vw;
-    margin: 0 auto;
-} */
 
 .applications-body-container {
     display: block;
@@ -135,10 +130,6 @@ h5 {
     transition: all 500ms;
     padding: 25px;
     cursor: pointer;
-}
-
-.faq-section.closed {
-    background-color: #FFFFFF;
 }
 
 .faq-section.open {

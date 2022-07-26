@@ -10,16 +10,22 @@ html, body, #___gatsby, #gatsby-focus-wrapper
     overflow-x: hidden;
 }
 
-.hackers-section {
-    color: #1F4A38;
-}
-
-.background-wrapper {
+.hackers-background-wrapper {
     background-color: #FAF5E7;
+    color: #1F4A38;
     min-height: 100%;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+.hackers-background-wrapper h3 {
+    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    color: #1F4A38;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    font-size: 22px;
 }
 
 .card-header {
@@ -49,28 +55,39 @@ h1 {
     justify-content: space-evenly;
     height: 30vw;
     display: flex;
+    flex-direction: row-reverse;
     margin: 0 auto;
     line-height: 1.5;
     font-family: "Futura", "Trebuchet MS", "Arial", "sans-serif";
     align-items: center;
+    margin-top: 6%;
 }
 
 .hackers-applications {
     margin-top: 20px;
     margin-bottom: 20px;
+    margin-right: 100px;
     font-size: 20px;
     max-width: 40vw;
 }
 
 .hackers-body-container {
-    width: 49vw;
-    margin: 0 auto;
+    display: block;
+    margin: auto;
+    padding-bottom: 9vh;
+    width: 55vw;
 }
 
 .apply-header-text {
     font-family: "Futura PT", "Futura", "Trebuchet MS", "Arial", "sans-serif";
-    font-weight: 550;
+    font-weight: 600;
     font-size: 50px;
+    line-height: 55px;
+    margin-block-end: 35px;
+}
+
+.applications-open-text {
+    margin-block-end: 35px;
 }
 
 .topHR {
@@ -92,6 +109,19 @@ h1 {
     margin-inline-end: 0;
 }
 
+.hackers-body-container .faq-section {
+    border-top-color: rgba(31, 74, 56, 0.6);
+    border-top-style: solid;
+    border-top-width: 1px;
+    transition: all 500ms;
+    padding: 25px;
+    cursor: pointer;
+}
+
+.hackers-body-container .faq-section.open {
+    background-color: #FAF5E7;
+}
+
 .question-text {
     font-family: "Proxima Nova";
     color: #1F4A38;
@@ -110,6 +140,10 @@ h1 {
     margin-inline-end: 25px;
 }
 
+.hackers-background-wrapper .faq-section:last-of-type {
+    border-bottom-color: rgba(31, 74, 56, 0.6);
+}
+
 .apply-button {
     display:inline-block;
     padding: 6px;
@@ -120,13 +154,35 @@ h1 {
     margin-right: 0.75em;
     border-radius:20px;
     text-decoration:none;
+    font-family: "Proxima Nova";
+    font-size: 16px;
+    font-weight: 600;
     background:#1F4A38;
     color:#F1ECDE;
     text-align:center;
     transition: all 0.2s;
 }
 
-.apply-button:hover {
+.event-site-button {
+    display:inline-block;
+    padding: 6px;
+    width: 137px;
+    height: 41px;
+    margin:0 0.1em 0.1em 0;
+    border: 0;
+    margin-right: 0.75em;
+    border-radius:20px;
+    text-decoration:none;
+    font-family: "Proxima Nova";
+    font-size: 16px;
+    font-weight: 600;
+    background:#1F4A38;
+    color:#F1ECDE;
+    text-align:center;
+    transition: all 0.2s;
+}
+
+button:hover {
     cursor: pointer;
 }
 
@@ -195,6 +251,10 @@ h1 {
 .iteration-logo {
     width: 70%;
     height: auto;
+    display: flex;
+    flex-direction: column;
+    vertical-align: middle;
+    width: 30vw;
 }
 
 .apply-logo-rect {
@@ -213,7 +273,48 @@ h1 {
     .hackers-section {
         width: 82vw;
     }
-    .apply-logo-rect {
-        width: 82vw;
+}
+
+@media(max-width: 600px) {
+    .hackers-background-wrapper {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
+
+    .hackers-body-container {
+        width: 82vw;
+        margin: 0 auto;
+    }
+
+    .hackers-header-container {
+        margin: 10vw;
+        width: auto;
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hackers-applications {
+        align-self: start;
+    }
+
+    .apply-header-text {
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .buttons-container {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .iteration-logo {
+        display: flex;
+        margin: 0 auto;
+        height: 225px;
+        width: 225px;
+    }
+
 }

@@ -13,7 +13,7 @@ export default function ApplicationsFAQs() {
   }
   return (
     <div className="applications-faqs">
-      <h3>FAQs</h3>
+      <h3 className="applications-faqs-h3">FAQs</h3>
       {Object.keys(questions).map((key, index) => (
         <FAQSection
           q={key}

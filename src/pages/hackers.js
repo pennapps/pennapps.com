@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { Link } from 'gatsby'
 import { useSpring, animated } from 'react-spring'
 import Navbar from '../components/Navbar'
+import FAQs from '../components/FAQs'
 import chevronImage from '../images/arrow-east.png'
 import iterationLogo from '../images/iteration-logo-f22.png'
 import '../styles/hackers.css'
@@ -30,32 +31,27 @@ const content = {
 
 export default function Hackers() {
   return (
-    <div className="background-wrapper">
+    <div className="hackers-background-wrapper">
       <Navbar />
-      <div className="hackers-section">
-        <div className="hackers-header-container">
-          <div className="hackers-applications">
-            <h1 className="apply-header-text">Apply to PennAppsXXIII!</h1>
-            <div>Applications are now open</div>
-            <div>
-              <a href="http://apply.pennapps.com/">
-                <button className="apply-button" type="button">APPLY</button>
-              </a>
-              <a href="https://2022f.pennapps.com/">
-                <button className="apply-button" type="button">EVENT SITE</button>
-              </a>
-            </div>
-          </div>
-          <div>
-            <img className="iteration-logo" src={iterationLogo} alt="Iteration Logo" />
+      <div className="hackers-header-container">
+        <div>
+          <img className="iteration-logo" src={iterationLogo} alt="Iteration Logo" />
+        </div>
+        <div className="hackers-applications">
+          <h1 className="apply-header-text">Apply to PennAppsXXIII!</h1>
+          <div className="applications-open-text">Applications are now open</div>
+          <div className="buttons-container">
+            <a href="http://apply.pennapps.com/">
+              <button className="apply-button" type="button">APPLY</button>
+            </a>
+            <a href="https://2022f.pennapps.com/">
+              <button className="event-site-button" type="button">EVENT SITE</button>
+            </a>
           </div>
         </div>
-        <div className="hackers-body-container">
-          <h1 className="faq-text">FAQs</h1>
-          {Object.keys(content).map(question => (
-            <QuestionCard questionHead={question} questionBody={content[question]} />
-          ))}
-        </div>
+      </div>
+      <div className="hackers-body-container">
+        <FAQs content={content} />
       </div>
     </div>
   )
