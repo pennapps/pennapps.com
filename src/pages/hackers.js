@@ -33,10 +33,10 @@ export default function Hackers() {
     <div className="background-wrapper">
       <Navbar />
       <div className="hackers-section">
-        <div className="apply-logo-rect">
-          <div className="apply-box">
+        <div className="hackers-header-container">
+          <div className="hackers-applications">
             <h1 className="apply-header-text">Apply to PennAppsXXIII!</h1>
-            <p>Applications are now open</p>
+            <div>Applications are now open</div>
             <div>
               <a href="http://apply.pennapps.com/">
                 <button className="apply-button" type="button">APPLY</button>
@@ -50,10 +50,12 @@ export default function Hackers() {
             <img className="iteration-logo" src={iterationLogo} alt="Iteration Logo" />
           </div>
         </div>
-        <h1 className="faq-text">FAQs</h1>
-        {Object.keys(content).map(question => (
-          <QuestionCard questionHead={question} questionBody={content[question]} />
-        ))}
+        <div className="hackers-body-container">
+          <h1 className="faq-text">FAQs</h1>
+          {Object.keys(content).map(question => (
+            <QuestionCard questionHead={question} questionBody={content[question]} />
+          ))}
+        </div>
       </div>
     </div>
   )

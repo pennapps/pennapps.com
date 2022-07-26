@@ -44,24 +44,33 @@ h1 {
     align-items: center;
 }
 
-.hackers-section {
+.hackers-header-container {
     width: 49vw;
+    justify-content: space-evenly;
+    height: 30vw;
+    display: flex;
     margin: 0 auto;
     line-height: 1.5;
     font-family: "Futura", "Trebuchet MS", "Arial", "sans-serif";
     align-items: center;
 }
 
-.apply-box {
-    max-width: 30%;
-    margin-top: 5%;
-    margin-bottom: 15%;
-    margin-right: 20%;
+.hackers-applications {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    max-width: 40vw;
+}
+
+.hackers-body-container {
+    width: 49vw;
+    margin: 0 auto;
 }
 
 .apply-header-text {
     font-family: "Futura PT", "Futura", "Trebuchet MS", "Arial", "sans-serif";
-    font-weight: 600;
+    font-weight: 550;
+    font-size: 50px;
 }
 
 .topHR {
@@ -191,8 +200,13 @@ h1 {
 .apply-logo-rect {
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
     align-items: center;
     width: 49vw;
+    max-width: 30%;
+    margin-top: 5%;
+    margin-bottom: 15%;
+    margin-right: 20%;
 }
 
 @media (max-width: 960px) {
