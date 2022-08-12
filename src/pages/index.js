@@ -22,6 +22,15 @@ import Sylvia from '../images/organizers/sylvia.png'
 import Zachary from '../images/organizers/zachary.jpg'
 import Wenny from '../images/organizers/wenny.png'
 
+export function Head({ location }) {
+  return (
+    <>
+      <title>{location.pathname}</title>
+      <link rel="stylesheet" href="https://use.typekit.net/tri7gwo.css" />
+    </>
+  )
+}
+
 const organizers = {
   'Sai Mamidala': 'DIRECTOR',
   'Jason Hom': 'VICE DIRECTOR',
@@ -39,7 +48,7 @@ const organizers = {
 }
 
 const pictures = [
-  Sai, Jason, Anna, Heyi, Anuj, Qijia, Audrey, Joe, Cynthia, Zachary, Mia, Sylvia, Wenny, 
+  Sai, Jason, Anna, Heyi, Anuj, Qijia, Audrey, Joe, Cynthia, Zachary, Mia, Sylvia, Wenny,
 ]
 
 export default function Index() {
@@ -48,7 +57,7 @@ export default function Index() {
       <Navbar />
       <div className="landing-info">
         <div className="landing-info-text">Applications for PennAppsXXIII are open!</div>
-        <div className='landing-info-btn-container'>
+        <div className="landing-info-btn-container">
           <a href="http://2022f.pennapps.com/">
             <button className="landing-info-btn" type="button">GO TO SITE</button>
           </a>

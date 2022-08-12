@@ -8,6 +8,8 @@ import ApplicationsCommittees from '../components/ApplicationsCommittees'
 import ApplicationsFAQs from '../components/ApplicationsFAQs'
 import Logo from '../images/logo.svg'
 
+export { Head } from './index'
+
 export default function Organizers() {
   // change this if Organizer Applications are open or closed
   const applicationsOpen = false
@@ -18,13 +20,13 @@ export default function Organizers() {
       <div className="applications-header-container">
         <Logo className="organizers-logo" />
         {applicationsOpen ? (
-          <div className="applications">
+          <div className="organizers-applications">
             <h2>Applications are Open!</h2>
             <div>Join the PennApps organizing team today</div>
             <button type="button">APPLY</button>
           </div>
         ) : (
-          <div className="applications">
+          <div className="organizers-applications">
             <h2>Applications are Closed</h2>
             <div>Stay tuned...</div>
           </div>

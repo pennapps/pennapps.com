@@ -13,14 +13,14 @@ div {
 }
 
 h2 {
-    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+    font-family: futura-pt, Futura, "Trebuchet MS", Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     color: #0F2944;
     font-size: 26px;
 }
 
 h3 {
-    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+    font-family: futura-pt, Futura, "Trebuchet MS", Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     color: #0F2944;
     margin-top: 30px;
@@ -176,10 +176,15 @@ h5 {
         margin: 10vw;
         height: auto;
         flex-direction: column;
+        justify-content: center;
     }
 
-    .organizers-logo-section {
-        margin: 50px;
+    .organizers-applications {
+        align-self: start;
+    }
+
+    .organizers-logo {
+        margin: 100px;
     }
 
 }
@@ -199,7 +204,7 @@ h5 {
         margin-top: 0px;
     }
 
-    .organizers-logo-section {
+    .organizers-logo {
         width: 270px;
     }
 }

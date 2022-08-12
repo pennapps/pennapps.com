@@ -29,6 +29,8 @@ const content = {
   project in a team of 2-4 people.`,
 }
 
+export { Head } from './index'
+
 export default function Hackers() {
   return (
     <div className="hackers-background-wrapper">

@@ -20,7 +20,7 @@ html, body, #___gatsby, #gatsby-focus-wrapper
 }
 
 .hackers-background-wrapper h3 {
-    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+    font-family: futura-pt, Futura, "Trebuchet MS", Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     color: #1F4A38;
     margin-top: 30px;
@@ -58,7 +58,7 @@ h1 {
     flex-direction: row-reverse;
     margin: 0 auto;
     line-height: 1.5;
-    font-family: "Futura", "Trebuchet MS", "Arial", "sans-serif";
+    font-family: "futura-pt", "Trebuchet MS", "Arial", "sans-serif";
     align-items: center;
     margin-top: 6%;
 }
@@ -79,7 +79,7 @@ h1 {
 }
 
 .apply-header-text {
-    font-family: "Futura PT", "Futura", "Trebuchet MS", "Arial", "sans-serif";
+    font-family: "futura-pt", "Futura", "Trebuchet MS", "Arial", "sans-serif";
     font-weight: 600;
     font-size: 50px;
     line-height: 55px;
@@ -101,7 +101,7 @@ h1 {
 }
 
 .faq-text {
-    font-family: "Futura PT", "Futura", "Trebuchet MS", "Arial", "sans-serif";
+    font-family: "futura-pt", "Futura", "Trebuchet MS", "Arial", "sans-serif";
     font-weight: 24px;
     margin-block-start: 0;
     margin-block-end: 0;

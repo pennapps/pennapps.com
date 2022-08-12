@@ -32,11 +32,11 @@ function DrawerAppBar(props) {
             <ListItemText primary="HOME" />
           </ListItemButton>
         </ListItem>
-        <ListItem key={'PENNAPPS XXIII'} disablePadding>
-            <ListItemButton href={'https://2022f.pennapps.com/'} sx={{ textAlign: 'left' }}>
-              <ListItemText primary={'PENNAPPS XXIII'} />
-            </ListItemButton>
-          </ListItem>
+        <ListItem key="PENNAPPS XXIII" disablePadding>
+          <ListItemButton href="https://2022f.pennapps.com/" sx={{ textAlign: 'left' }}>
+            <ListItemText primary="PENNAPPS XXIII" />
+          </ListItemButton>
+        </ListItem>
         {navItems.map(item => (
           <ListItem key={item} disablePadding>
             <ListItemButton component={Link} to={`/${item}`.toLowerCase()} sx={{ textAlign: 'left' }}>
@@ -61,8 +61,8 @@ function DrawerAppBar(props) {
             sx={{
               flexGrow: 1,
               display: { xs: 'block', sm: 'block' },
-              fontFamily: `'Futura', 'Trebuchet MS', 'Arial', 'sans-serif'`,
-              fontWeight: 600,
+              fontFamily: `'futura-pt', 'Futura', 'Trebuchet MS', 'Arial', 'sans-serif'`,
+              fontWeight: 800,
               letterSpacing: 2,
               color: '#0F2944',
               textDecoration: 'none',
@@ -73,11 +73,11 @@ function DrawerAppBar(props) {
           </Typography>
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
             <Button
-              href={"https://2022f.pennapps.com/"}
-              key={'PENNAPPS XXIII'}
-              sx={{ color: '#0F2944', fontFamily: 'Proxima Nova', mr: '13px' }}  
+              href="https://2022f.pennapps.com/"
+              key="PENNAPPS XXIII"
+              sx={{ color: '#0F2944', fontFamily: 'Proxima Nova', mr: '13px' }}
             >
-              {'PENNAPPS XXIII'}
+              PENNAPPS XXIII
             </Button>
             {navItems.map(item => (
               <Button

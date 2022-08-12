@@ -7,6 +7,8 @@ import ApplicationsOpenSvg from '../images/applications-open.svg'
 import ApplicationsClosedSvg from '../images/applications-closed.svg'
 import '../styles/ambassadors.css'
 
+export { Head } from './index'
+
 export default function Ambassadors() {
   // change this if CA Applications are open or closed
   const applicationsOpen = false

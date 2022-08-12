@@ -17,7 +17,6 @@ module.exports = {
       },
     },
     `gatsby-plugin-cname`,
-    `gatsby-plugin-react-helmet`,
     `gatsby-plugin-offline`,
   ],
 }
