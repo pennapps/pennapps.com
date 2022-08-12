@@ -7,7 +7,14 @@ import ApplicationsOpenSvg from '../images/applications-open.svg'
 import ApplicationsClosedSvg from '../images/applications-closed.svg'
 import '../styles/ambassadors.css'
 
-export { Head } from './index'
+export function Head() {
+  return (
+    <>
+      <title>Campus Ambassadors - PennApps</title>
+      <link rel="stylesheet" href="https://use.typekit.net/tri7gwo.css" />
+    </>
+  )
+}
 
 export default function Ambassadors() {
   // change this if CA Applications are open or closed

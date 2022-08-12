@@ -29,7 +29,14 @@ const content = {
   project in a team of 2-4 people.`,
 }
 
-export { Head } from './index'
+export function Head() {
+  return (
+    <>
+      <title>Hackers - PennApps</title>
+      <link rel="stylesheet" href="https://use.typekit.net/tri7gwo.css" />
+    </>
+  )
+}
 
 export default function Hackers() {
   return (

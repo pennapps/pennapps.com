@@ -22,10 +22,10 @@ import Sylvia from '../images/organizers/sylvia.png'
 import Zachary from '../images/organizers/zachary.jpg'
 import Wenny from '../images/organizers/wenny.png'
 
-export function Head({ location }) {
+export function Head() {
   return (
     <>
-      <title>{location.pathname}</title>
+      <title>PennApps - The world's first college hackathon</title>
       <link rel="stylesheet" href="https://use.typekit.net/tri7gwo.css" />
     </>
   )

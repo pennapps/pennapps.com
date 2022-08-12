@@ -8,7 +8,14 @@ import ApplicationsCommittees from '../components/ApplicationsCommittees'
 import ApplicationsFAQs from '../components/ApplicationsFAQs'
 import Logo from '../images/logo.svg'
 
-export { Head } from './index'
+export function Head() {
+  return (
+    <>
+      <title>Organizers - PennApps</title>
+      <link rel="stylesheet" href="https://use.typekit.net/tri7gwo.css" />
+    </>
+  )
+}
 
 export default function Organizers() {
   // change this if Organizer Applications are open or closed
