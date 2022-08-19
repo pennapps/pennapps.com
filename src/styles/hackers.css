@@ -186,7 +186,14 @@ h1 {
     border: 2px solid #1F4A38;
 }
 
-button:hover {
+.apply-button:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0);
+    color: #1F4A38;
+    border: 1px solid #1F4A38;
+}
+
+.event-site-button:hover {
     cursor: pointer;
     background-color: rgba(0, 0, 0, 0);
     color: #1F4A38;

@@ -52,7 +52,6 @@ hr {
   font-weight: 400;
   padding: 6px;
   transition: all 0.2s;
-
   border: 2px solid #CDE1F9;
 }
 
@@ -107,6 +106,10 @@ hr {
   flex-direction: column;
   margin-right: 3%;
   margin-top: 20px;
+}
+
+button:hover {
+  cursor: pointer;
 }
 
 .faq-section-am {
