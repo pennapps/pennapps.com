@@ -18,7 +18,7 @@ export function Head() {
 
 export default function Ambassadors() {
   // change this if CA Applications are open or closed
-  const applicationsOpen = false
+  const applicationsOpen = true
   const [showQ1, setShowQ1] = React.useState(false)
   const [showQ2, setShowQ2] = React.useState(false)
   const [showQ3, setShowQ3] = React.useState(false)
@@ -39,6 +39,11 @@ export default function Ambassadors() {
         <div className="header-section">
           <div>
             <div className="horizontal-align">
+              <div className="horizontal-section">
+                <div className="logo-section">
+                  {applicationsOpen ? (<ApplicationsOpenSvg className='open-closed-logo' />) : (<ApplicationsClosedSvg className='open-closed-logo' />)}
+                </div>
+              </div>
               {applicationsOpen ? (
                 <div className="horizontal-section">
                   <h2>Applications are Open!</h2>
@@ -61,11 +66,6 @@ export default function Ambassadors() {
                   <br />
                 </div>
               )}
-              <div className="horizontal-section">
-                <div className="logo-section">
-                  {applicationsOpen ? (<ApplicationsOpenSvg />) : (<ApplicationsClosedSvg />)}
-                </div>
-              </div>
             </div>
           </div>
         </div>

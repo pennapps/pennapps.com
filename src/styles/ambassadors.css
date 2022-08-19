@@ -27,7 +27,7 @@ hr {
 
 .horizontal-align {
   display: flex;
-  flex-direction: row;
+  flex-direction: row-reverse;
   justify-content: space-evenly;
 }
 
@@ -47,12 +47,18 @@ hr {
   color: #6593C1;
   border-radius: 20px;
   border: none;
+  font-family: "Proxima Nova";
+  font-size: 16px;
+  font-weight: 400;
   padding: 6px;
+  transition: all 0.2s;
+
+  border: 2px solid #CDE1F9;
 }
 
 .link-btn:hover {
-  background-color: #6593C1;
-  color: #CDE1F9;
+  background-color: #FFFFFF;
+  border: 1.5px solid #6593C1;
   cursor: pointer;
 }
 
@@ -75,8 +81,24 @@ hr {
 
 @media only screen and (max-width: 600px) {
   .main-content {
-      width: 70%;
+    width: 70%;
   }
+
+  .header-section .horizontal-align {
+    width: 70%;
+    margin: auto;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .horizontal-section {
+    max-width: none;
+  }
+
+  .logo-section {
+    width: 70%;
+  }
+
 }
 
 .arrow-button {

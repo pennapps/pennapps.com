@@ -6,7 +6,9 @@ import ApplicationsIntro from '../components/ApplicationsIntro'
 import ApplicationsProcess from '../components/ApplicationsProcess'
 import ApplicationsCommittees from '../components/ApplicationsCommittees'
 import ApplicationsFAQs from '../components/ApplicationsFAQs'
-import Logo from '../images/logo.svg'
+// import Logo from '../images/logo.svg'
+import ClosedImg from '../images/applications-closed.svg'
+import OpenImg from '../images/applications-open.svg'
 
 export function Head() {
   return (
@@ -19,18 +21,22 @@ export function Head() {
 
 export default function Organizers() {
   // change this if Organizer Applications are open or closed
-  const applicationsOpen = false
+  const applicationsOpen = true
 
   return (
     <>
       <Navbar />
       <div className="applications-header-container">
-        <Logo className="organizers-logo" />
+        {/* <Logo className="organizers-logo" /> */}
+        {
+          applicationsOpen ? (<OpenImg className="open-closed-logo" />) : (<ClosedImg className="open-closed-logo" />)
+        }
+
         {applicationsOpen ? (
           <div className="organizers-applications">
             <h2>Applications are Open!</h2>
             <div>Join the PennApps organizing team today</div>
-            <button type="button">APPLY</button>
+            <button className="applications-btn" type="button">APPLY</button>
           </div>
         ) : (
           <div className="organizers-applications">
