@@ -25,7 +25,7 @@ export default function Organizers() {
 
   return (
     <>
-      <Navbar />
+      <Navbar currPage="ORGANIZERS" />
       <div className="applications-header-container">
         {/* <Logo className="organizers-logo" /> */}
         {

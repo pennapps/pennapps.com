@@ -41,7 +41,7 @@ export function Head() {
 export default function Hackers() {
   return (
     <div className="hackers-background-wrapper">
-      <Navbar />
+      <Navbar currPage="HACKERS" />
       <div className="hackers-header-container">
         <div>
           <img className="iteration-logo" src={iterationLogo} alt="Iteration Logo" />

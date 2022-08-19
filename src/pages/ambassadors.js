@@ -32,9 +32,11 @@ export default function Ambassadors() {
     return color
   }
 
+  // const ni = [{ name: 'HACKERS', shown: false }, { name: 'ORGANIZERS', shown: false }, { name: 'AMBASSADORS', shown: true }]
+
   return (
     <div>
-      <Navbar />
+      <Navbar currPage="AMBASSADORS" />
       <div className="ambassador-section">
         <div className="header-section">
           <div>
