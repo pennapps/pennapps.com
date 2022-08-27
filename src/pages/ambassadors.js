@@ -18,7 +18,7 @@ export function Head() {
 
 export default function Ambassadors() {
   // change this if CA Applications are open or closed
-  const applicationsOpen = true
+  const applicationsOpen = false
   const [showQ1, setShowQ1] = React.useState(false)
   const [showQ2, setShowQ2] = React.useState(false)
   const [showQ3, setShowQ3] = React.useState(false)
@@ -31,8 +31,6 @@ export default function Ambassadors() {
     }
     return color
   }
-
-  // const ni = [{ name: 'HACKERS', shown: false }, { name: 'ORGANIZERS', shown: false }, { name: 'AMBASSADORS', shown: true }]
 
   return (
     <div>

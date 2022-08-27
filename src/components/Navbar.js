@@ -17,7 +17,6 @@ const drawerWidth = 240
 const navItems = ['HACKERS', 'ORGANIZERS', 'AMBASSADORS']
 
 function DrawerAppBar({ currPage }) {
-  // const { window } = props
   const [mobileOpen, setMobileOpen] = React.useState(false)
 
   const handleDrawerToggle = () => {
@@ -47,8 +46,6 @@ function DrawerAppBar({ currPage }) {
       </List>
     </Box>
   )
-
-  // const container = window !== undefined ? () => window().document.body : undefined
 
   return (
     <Box sx={{ display: 'flex' }}>
@@ -84,7 +81,7 @@ function DrawerAppBar({ currPage }) {
                 component={Link}
                 to={`/${item}`.toLowerCase()}
                 key={item}
-                sx={{ bgcolor: item === currPage ? 'rgba(25, 118, 210, 0.04)' : '', color: '#0F2944', fontFamily: 'Proxima Nova', mr: '13px' }}
+                sx={{ bgcolor: item === currPage ? 'rgba(25, 118, 210, 0.1)' : '', color: '#0F2944', fontFamily: 'Proxima Nova', mr: '13px' }}
               >
                 {item}
               </Button>
@@ -106,7 +103,6 @@ function DrawerAppBar({ currPage }) {
       <Box component="nav">
         <Drawer
           anchor="right"
-          // container={container}
           variant="temporary"
           open={mobileOpen}
           onClose={handleDrawerToggle}

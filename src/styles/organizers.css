@@ -91,12 +91,6 @@ h5 {
     cursor: pointer;
 } */
 
-/* .organizers-logo {
-    display: flex;
-    flex-direction: column;
-    vertical-align: middle;
-    width: 30vw;
-} */
 
 .open-closed-logo {
     display: flex;
@@ -232,9 +226,6 @@ h5 {
         margin-top: 0px;
     }
 
-    /* .organizers-logo {
-        width: 270px;
-    } */
 
     .open-closed-logo {
         width: 270px;

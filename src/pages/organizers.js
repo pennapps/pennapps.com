@@ -6,7 +6,6 @@ import ApplicationsIntro from '../components/ApplicationsIntro'
 import ApplicationsProcess from '../components/ApplicationsProcess'
 import ApplicationsCommittees from '../components/ApplicationsCommittees'
 import ApplicationsFAQs from '../components/ApplicationsFAQs'
-// import Logo from '../images/logo.svg'
 import ClosedImg from '../images/applications-closed.svg'
 import OpenImg from '../images/applications-open.svg'
 
@@ -27,7 +26,6 @@ export default function Organizers() {
     <>
       <Navbar currPage="ORGANIZERS" />
       <div className="applications-header-container">
-        {/* <Logo className="organizers-logo" /> */}
         {
           applicationsOpen ? (<OpenImg className="open-closed-logo" />) : (<ClosedImg className="open-closed-logo" />)
         }
