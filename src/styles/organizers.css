@@ -42,7 +42,31 @@ h5 {
     margin-top: 6%;
 }
 
-.applications {
+.applications-btn {
+    width: 103px;
+    height: 41px;
+    min-width: 50px;
+    margin-top: 20px;
+    background-color: #CDE1F9;
+    color: #6593C1;
+    border-radius: 20px;
+    border: none;
+    font-family: "Proxima Nova";
+    font-size: 16px;
+    font-weight: 400;
+    padding: 6px;
+    transition: all 0.2s;
+    border: 2px solid #CDE1F9;
+}
+
+.applications-btn:hover {
+    background-color: #FFFFFF;
+    border: 1.5px solid #6593C1;
+    cursor: pointer;
+}
+
+
+/* .applications {
     margin-top: 20px;
     margin-bottom: 20px;
     font-size: 20px;
@@ -63,9 +87,10 @@ h5 {
     background-color: #6593C1;
     color: #CDE1F9;
     cursor: pointer;
-}
+} */
 
-.organizers-logo {
+
+.open-closed-logo {
     display: flex;
     flex-direction: column;
     vertical-align: middle;
@@ -83,7 +108,7 @@ h5 {
     .applications-body-container {
         width: 70%;
     }
-  }
+}
 
 
 .committee-section {
@@ -166,12 +191,13 @@ h5 {
 
 @media(max-width: 600px) {
     .applications-body-container {
-        width: 80vw;
+        width: 70%;
         margin: 0 auto;
     }
 
     .applications-header-container {
-        margin: 10vw;
+        margin: auto;
+        width: 70%;
         height: auto;
         flex-direction: column;
         justify-content: center;
@@ -179,10 +205,6 @@ h5 {
 
     .organizers-applications {
         align-self: start;
-    }
-
-    .organizers-logo {
-        margin: 100px;
     }
 
 }
@@ -202,7 +224,8 @@ h5 {
         margin-top: 0px;
     }
 
-    .organizers-logo {
+
+    .open-closed-logo {
         width: 270px;
     }
 }

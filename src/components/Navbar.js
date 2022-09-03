@@ -16,8 +16,7 @@ import { Link } from 'gatsby'
 const drawerWidth = 240
 const navItems = ['HACKERS', 'ORGANIZERS', 'AMBASSADORS']
 
-function DrawerAppBar(props) {
-  const { window } = props
+function DrawerAppBar({ currPage }) {
   const [mobileOpen, setMobileOpen] = React.useState(false)
 
   const handleDrawerToggle = () => {
@@ -47,8 +46,6 @@ function DrawerAppBar(props) {
       </List>
     </Box>
   )
-
-  const container = window !== undefined ? () => window().document.body : undefined
 
   return (
     <Box sx={{ display: 'flex' }}>
@@ -84,7 +81,7 @@ function DrawerAppBar(props) {
                 component={Link}
                 to={`/${item}`.toLowerCase()}
                 key={item}
-                sx={{ color: '#0F2944', fontFamily: 'Proxima Nova', mr: '13px' }}
+                sx={{ bgcolor: item === currPage ? 'rgba(25, 118, 210, 0.1)' : '', color: '#0F2944', fontFamily: 'Proxima Nova', mr: '13px' }}
               >
                 {item}
               </Button>
@@ -106,7 +103,6 @@ function DrawerAppBar(props) {
       <Box component="nav">
         <Drawer
           anchor="right"
-          container={container}
           variant="temporary"
           open={mobileOpen}
           onClose={handleDrawerToggle}

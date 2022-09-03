@@ -34,11 +34,16 @@ export default function Ambassadors() {
 
   return (
     <div>
-      <Navbar />
+      <Navbar currPage="AMBASSADORS" />
       <div className="ambassador-section">
         <div className="header-section">
           <div>
             <div className="horizontal-align">
+              <div className="horizontal-section">
+                <div className="logo-section">
+                  {applicationsOpen ? (<ApplicationsOpenSvg className='open-closed-logo' />) : (<ApplicationsClosedSvg className='open-closed-logo' />)}
+                </div>
+              </div>
               {applicationsOpen ? (
                 <div className="horizontal-section">
                   <h2>Applications are Open!</h2>
@@ -61,11 +66,6 @@ export default function Ambassadors() {
                   <br />
                 </div>
               )}
-              <div className="horizontal-section">
-                <div className="logo-section">
-                  {applicationsOpen ? (<ApplicationsOpenSvg />) : (<ApplicationsClosedSvg />)}
-                </div>
-              </div>
             </div>
           </div>
         </div>
@@ -144,6 +144,11 @@ export default function Ambassadors() {
               style={{ backgroundColor: expandedSectionColor(showQ1) }}
             >
               <div className="horizontal-align">
+                <div
+                  className="arrow-button"
+                >
+                  {showQ1 ? <FaChevronDown /> : <FaChevronRight />}
+                </div>
                 <button
                   type="button"
                   className="faq-section-am"
@@ -157,11 +162,7 @@ export default function Ambassadors() {
                     ) : ''}
                   </div>
                 </button>
-                <div
-                  className="arrow-button"
-                >
-                  {showQ1 ? <FaChevronDown /> : <FaChevronRight />}
-                </div>
+
               </div>
             </button>
             <hr />
@@ -172,6 +173,11 @@ export default function Ambassadors() {
               style={{ backgroundColor: expandedSectionColor(showQ2) }}
             >
               <div className="horizontal-align">
+                <div
+                  className="arrow-button"
+                >
+                  {showQ2 ? <FaChevronDown /> : <FaChevronRight />}
+                </div>
                 <button
                   type="button"
                   className="faq-section-am"
@@ -181,11 +187,7 @@ export default function Ambassadors() {
                     {showQ2 ? <section className="answer">If accepted as a campus ambassador, we will send marketing materials you can send on social media, newsletters, etc.</section> : ''}
                   </div>
                 </button>
-                <div
-                  className="arrow-button"
-                >
-                  {showQ2 ? <FaChevronDown /> : <FaChevronRight />}
-                </div>
+
               </div>
             </button>
             <hr />
@@ -196,6 +198,11 @@ export default function Ambassadors() {
               style={{ backgroundColor: expandedSectionColor(showQ3) }}
             >
               <div className="horizontal-align">
+                <div
+                  className="arrow-button"
+                >
+                  {showQ3 ? <FaChevronDown /> : <FaChevronRight />}
+                </div>
                 <button
                   type="button"
                   className="faq-section-am"
@@ -205,11 +212,7 @@ export default function Ambassadors() {
                     {showQ3 ? <section className="answer">While you are considered with the priority admission, you are not guaranteed a spot.</section> : ''}
                   </div>
                 </button>
-                <div
-                  className="arrow-button"
-                >
-                  {showQ3 ? <FaChevronDown /> : <FaChevronRight />}
-                </div>
+
               </div>
             </button>
             <hr />
@@ -220,6 +223,11 @@ export default function Ambassadors() {
               style={{ backgroundColor: expandedSectionColor(showQ4) }}
             >
               <div className="horizontal-align">
+                <div
+                  className="arrow-button"
+                >
+                  {showQ4 ? <FaChevronDown /> : <FaChevronRight />}
+                </div>
                 <button
                   type="button"
                   className="faq-section-am"
@@ -229,11 +237,6 @@ export default function Ambassadors() {
                     {showQ4 ? <section className="answer">Participants will have the option to name the campus ambassador they heard from on the Hacker Application.</section> : ''}
                   </div>
                 </button>
-                <div
-                  className="arrow-button"
-                >
-                  {showQ4 ? <FaChevronDown /> : <FaChevronRight />}
-                </div>
               </div>
             </button>
             <hr />
