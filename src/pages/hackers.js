@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { Link } from 'gatsby'
 import { useSpring, animated } from 'react-spring'
 import Navbar from '../components/Navbar'
+import Footer from '../components/Footer'
 import FAQs from '../components/FAQs'
 import chevronImage from '../images/arrow-east.png'
 import iterationLogo from '../images/iteration-logo-f22.png'
@@ -62,6 +63,7 @@ export default function Hackers() {
       <div className="hackers-body-container">
         <FAQs content={content} />
       </div>
+      <Footer />
     </div>
   )
 }

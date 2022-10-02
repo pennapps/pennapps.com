@@ -14,7 +14,7 @@ hr {
 
 .ambassador-section {
   line-height: 1.5;
-  font-family: "Proxima Nova";
+  font-family: "proxima-nova";
   margin: auto;
 }
 
@@ -45,7 +45,7 @@ hr {
   color: #6593C1;
   border-radius: 20px;
   border: none;
-  font-family: "Proxima Nova";
+  font-family: "proxima-nova";
   font-size: 16px;
   font-weight: 400;
   padding: 6px;
@@ -116,7 +116,7 @@ button:hover {
   width: 100%;
   text-align: left;
   font-size: 15px;
-  font-family: "Proxima Nova";
+  font-family: "proxima-nova";
   line-height: 1.5;
   background: none;
 }

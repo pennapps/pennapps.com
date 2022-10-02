@@ -72,7 +72,7 @@ function DrawerAppBar({ currPage }) {
             <Button
               href="https://2022f.pennapps.com/"
               key="PENNAPPS XXIII"
-              sx={{ color: '#0F2944', fontFamily: 'Proxima Nova', mr: '13px' }}
+              sx={{ color: '#0F2944', fontFamily: 'proxima-nova', mr: '13px' }}
             >
               PENNAPPS XXIII
             </Button>
@@ -81,7 +81,7 @@ function DrawerAppBar({ currPage }) {
                 component={Link}
                 to={`/${item}`.toLowerCase()}
                 key={item}
-                sx={{ bgcolor: item === currPage ? 'rgba(25, 118, 210, 0.1)' : '', color: '#0F2944', fontFamily: 'Proxima Nova', mr: '13px' }}
+                sx={{ bgcolor: item === currPage ? 'rgba(25, 118, 210, 0.1)' : '', color: '#0F2944', fontFamily: 'proxima-nova', mr: '13px' }}
               >
                 {item}
               </Button>
