@@ -1,4 +1,5 @@
 import * as React from 'react'
+import { useStaticQuery, graphql } from 'gatsby'
 
 import Footer from '../components/Footer'
 import OrganizerCard from '../components/OrganizerCard'
@@ -31,7 +32,23 @@ export function Head() {
   )
 }
 
-const organizers = {
+const names = {
+  sai: 'Sai Mamidala',
+  jason: 'Jason Hom',
+  anna: 'Anna Xia',
+  heyi: 'Heyi Liu',
+  anuj: 'Anuj Kothari',
+  qijia: 'Qijia (Joy) Liu',
+  audrey: 'Audrey Yang',
+  joe: 'Joe Konno',
+  cynthia: 'Cynthia Adhiambo Otieno',
+  zachary: 'Zachary Huang-Ogata',
+  mia: 'Mia Kim',
+  sylvia: 'Sylvia Zhao',
+  wenny: 'Wenny Cheng',
+}
+
+const titles = {
   'Sai Mamidala': 'DIRECTOR',
   'Jason Hom': 'VICE DIRECTOR',
   'Anna Xia': 'OUTREACH',
@@ -52,6 +69,27 @@ const pictures = [
 ]
 
 export default function Index() {
+  const data = useStaticQuery(
+    graphql`
+    {
+      allFile(filter: { relativePath: {regex: "/organizers\\/.+(.png|.jpg)/"}}) {
+        edges {
+          node {
+            name
+            childImageSharp {
+                gatsbyImageData(
+                  width: 200
+                )
+            }
+          }
+        }
+      }      
+    }
+  `,
+  )
+  const { edges } = data.allFile
+  console.log(data)
+  Object.keys(edges).map(id => console.log(edges[id]))
   return (
     <div className="landing">
       <Navbar />
@@ -100,12 +138,11 @@ export default function Index() {
         <div className="organizers">
           <h3>Organizers</h3>
           <div className="organizers-grid">
-            {Object.keys(organizers).map((key, idx) => (
+            {Object.keys(edges).map(id => (
               <OrganizerCard
-                name={key}
-                title={organizers[key]}
-                idx={idx}
-                src={pictures[idx]}
+                name={names[edges[id].node.name]}
+                title={titles[names[edges[id].node.name]]}
+                image={edges[id].node.childImageSharp.gatsbyImageData}
               />
             ))}
           </div>

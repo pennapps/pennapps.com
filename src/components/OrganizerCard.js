@@ -1,16 +1,13 @@
 import * as React from 'react'
 import '../styles/home.css'
+import { GatsbyImage } from 'gatsby-plugin-image'
 
 export default function OrganizerCard(props) {
-  const { name, title, src } = props
+  const { name, title, image } = props
   return (
     <div className="organizer-card">
       <div className="img-container">
-        <img
-          src={src}
-          className="organizer-img"
-          alt={name}
-        />
+        <GatsbyImage image={image} />
       </div>
       <div className="title-container">
         <h4>{name}</h4>
