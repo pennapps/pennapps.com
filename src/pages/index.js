@@ -79,6 +79,7 @@ export default function Index() {
             childImageSharp {
                 gatsbyImageData(
                   width: 200
+                  height: 200
                 )
             }
           }
@@ -87,9 +88,7 @@ export default function Index() {
     }
   `,
   )
-  const { edges } = data.allFile
-  console.log(data)
-  Object.keys(edges).map(id => console.log(edges[id]))
+  const { allFile: { edges } } = data
   return (
     <div className="landing">
       <Navbar />
