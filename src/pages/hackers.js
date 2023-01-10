@@ -41,133 +41,29 @@ export function Head() {
 
 export default function Hackers() {
   return (
-    <div className="hackers-background-wrapper">
+    <div className="bg-hacks text-hackp min-h-full m-0 p-0 box-border border-b-hackp">
       <Navbar currPage="HACKERS" />
-      <div className="hackers-header-container">
+      <div className="justify-evenly h-2/6 w-1/2 flex items-center flex-row-reverse m-auto leading-6 mt-[6%]">
         <div>
-          <img className="iteration-logo" src={iterationLogo} alt="Iteration Logo" />
+          <img className="w-[30wv] h-auto flex flex-col align-middle" src={iterationLogo} alt="Iteration Logo" />
         </div>
-        <div className="hackers-applications">
-          <h1 className="apply-header-text">Apply to PennAppsXXIII!</h1>
-          <div className="applications-open-text">Applications are now open</div>
+        <div className="my-[20px] mr-[100px] text-large max-w-[40vw]">
+          <h1 className="font-hackers font-semibold text-5xl leading-[55px] me-[35px]">Apply to PennAppsXXIII!</h1>
+          <div className="me-[35px]">Applications are now open</div>
           <div className="buttons-container">
             <a href="http://apply.pennapps.com/">
-              <button className="apply-button" type="button">APPLY</button>
+              <button className="inline-block w-[103px] h-[41px] p-[6px] mr-[0.75em] mb-[0.1em] border-2 border-hackp text-hacks text-center transition-all duration-200 font-semibold rounded-[20px] font-proximaNova bg-hackp hover:bg-transparent hover:border hover:text-hackp hover:cursor-pointer" type="button">APPLY</button>
             </a>
             <a href="https://2022f.pennapps.com/">
-              <button className="event-site-button" type="button">EVENT SITE</button>
+              <button className="inline-block w-[137px] h-[41px] p-[6px] mr-[0.75em] mb-[0.1em] border-2 border-hackp text-hacks text-center transition-all duration-200 font-semibold rounded-[20px] font-proximaNova bg-hackp hover:bg-transparent hover:border hover:text-hackp hover:cursor-pointer" type="button">EVENT SITE</button>
             </a>
           </div>
         </div>
       </div>
-      <div className="hackers-body-container">
+      <div className="block m-auto pb-[9vh] w-[55vw]">
         <FAQs content={content} />
       </div>
       <Footer />
-    </div>
-  )
-}
-
-function QuestionCard({ questionHead, questionBody }) {
-  const [isOpen, setOpen] = useState(false)
-
-  return (
-    <div
-      className="question-container"
-      onClick={() => setOpen(!isOpen)}
-      role="button"
-      onKeyPress={() => setOpen(!isOpen)}
-      tabIndex={0}
-    >
-      <hr className="topHR" />
-      <div className="card-header">
-        <h3 className="question-text">{questionHead}</h3>
-        <RotatingChevron isOpen={isOpen} setOpen={setOpen} />
-      </div>
-      <div className="answer-text">
-        {isOpen && (<SlidingText isOpen={isOpen} setOpen={setOpen} text={questionBody} />)}
-      </div>
-    </div>
-  )
-}
-
-function RotatingChevron({ isOpen, setOpen }) {
-  const rotate = isOpen ? 'rotate(90deg)' : 'rotate(0)'
-
-  return (
-    <input
-      className="chevron"
-      type="image"
-      style={{ transform: rotate, transition: 'all 0.05s linear' }}
-      src={chevronImage}
-      alt="Click"
-      onClick={() => setOpen(!isOpen)}
-    />
-  )
-}
-
-function SlidingText({ isOpen, setOpen, text }) {
-  const contentProps = useSpring({
-    opacity: 1,
-    from: { opacity: 0 },
-    delay: 0.1,
-  })
-
-  return (
-    <animated.p className="slidingText" style={contentProps}>{text}</animated.p>
-  )
-}
-
-function Header() {
-  return (
-    <div className="header">
-      <div>
-        <Link to="/">
-          <button className="pennapps-button" type="button">PENNAPPS</button>
-        </Link>
-      </div>
-      <div className="pages-nav">
-        <Link to="/hackers">
-          {
-            window.location.href.endsWith('hackers')
-            && <button className="header-bold-button" type="button">HACKERS</button>
-          }
-          {
-            !window.location.href.endsWith('hackers')
-            && <button className="header-button" type="button">HACKERS</button>
-          }
-        </Link>
-        <Link to="/organizers">
-          {
-            window.location.href.endsWith('organizers')
-            && <button className="header-bold-button" type="button">ORGANIZERS</button>
-          }
-          {
-            !window.location.href.endsWith('organizers')
-            && <button className="header-button" type="button">ORGANIZERS</button>
-          }
-        </Link>
-        <Link to="/ambassadors">
-          {
-            window.location.href.endsWith('ambassadors')
-            && <button className="header-bold-button" type="button">AMBASSADORS</button>
-          }
-          {
-            !window.location.href.endsWith('ambassadors')
-            && <button className="header-button" type="button">AMBASSADORS</button>
-          }
-        </Link>
-        <Link to="/moreinfo">
-          {
-            window.location.href.endsWith('moreinfo')
-            && <button className="header-bold-button" type="button">MORE INFO</button>
-          }
-          {
-            !window.location.href.endsWith('moreinfo')
-            && <button className="header-button" type="button">MORE INFO</button>
-          }
-        </Link>
-      </div>
     </div>
   )
 }
