@@ -1,0 +1,62 @@
+[
+  {
+    "name": "Anuj Kothari",
+    "title": "Director",
+    "image": "anuj"
+  },
+  {
+    "name": "Qijia (Joy) Liu",
+    "title": "Vice director",
+    "image": "joy"
+  },
+  {
+    "name": "Minnie Kim",
+    "title": "Creative",
+    "image": "minnie"
+  },
+  {
+    "name": "Jackie Li",
+    "title": "Creative",
+    "image": "jackie"
+  },
+  {
+    "name": "Sahishnu Hanumolu",
+    "title": "Outreach",
+    "image": "sahishnu"
+  },
+  {
+    "name": "Melody Cheng",
+    "title": "Outreach",
+    "image": "Melody"
+  },
+  {
+    "name": "Yuying Fan",
+    "title": "Dev",
+    "image": "yuying"
+  },
+  {
+    "name": "Vincent Cai",
+    "title": "Dev",
+    "image": "vincent"
+  },
+  {
+    "name": "Lina Chihoub",
+    "title": "Sponsorship",
+    "image": "lina"
+  },
+  {
+    "name": "Lyndsey Barrett",
+    "title": "Sponsorship",
+    "image": "lyndsey"
+  },
+  {
+    "name": "Helena Zhang",
+    "title": "Logistics",
+    "image": "helena"
+  },
+  {
+    "name": "Ishaan Lal",
+    "title": "Logistics",
+    "image": "ishaan"
+  }
+]
