@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkpennapps_com_redesign=self.webpackChunkpennapps_com_redesign||[]).push([[883],{429:function(e,n,t){t.r(n),t.d(n,{Head:function(){return r},default:function(){return f}});var u=t(7294),a=t(1082),c=t(2281),r=c.Head;function f(){return(0,u.useEffect)((function(){(0,a.navigate)("/")}),[]),u.createElement(c.default,null)}}}]);
+//# sourceMappingURL=component---src-pages-404-js-e5ff1d251bb93c1f781e.js.map
