@@ -7,11 +7,11 @@ export default function OrganizerCard(props) {
   return (
     <div className="organizer-card">
       <div className="img-container">
-        <GatsbyImage image={image} imgStyle={{ borderRadius: '4px' }} />
+        {image && <GatsbyImage image={image} imgStyle={{ borderRadius: '4px' }} alt={name} />}
       </div>
       <div className="title-container">
         <h4>{name}</h4>
-        <div className="organizer-title">{title}</div>
+        <div className="organizer-title">{title.toUpperCase()}</div>
       </div>
     </div>
   )

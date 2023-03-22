@@ -9,19 +9,7 @@ import '../styles/home.css'
 import landingImage from '../images/landing-image.png'
 import timelineImage from '../images/timeline.png'
 import mobileTimelineImage from '../images/mobile-timeline.png'
-import Sai from '../images/organizers/sai.png'
-import Jason from '../images/organizers/jason.jpg'
-import Anna from '../images/organizers/anna.jpg'
-import Anuj from '../images/organizers/anuj.jpg'
-import Audrey from '../images/organizers/audrey.jpg'
-import Cynthia from '../images/organizers/cynthia.png'
-import Heyi from '../images/organizers/heyi.jpg'
-import Joe from '../images/organizers/joe.png'
-import Mia from '../images/organizers/mia.png'
-import Qijia from '../images/organizers/qijia.jpeg'
-import Sylvia from '../images/organizers/sylvia.png'
-import Zachary from '../images/organizers/zachary.jpg'
-import Wenny from '../images/organizers/wenny.png'
+import organizers from '../organizers.json'
 
 export function Head() {
   return (
@@ -32,63 +20,26 @@ export function Head() {
   )
 }
 
-const names = {
-  sai: 'Sai Mamidala',
-  jason: 'Jason Hom',
-  anna: 'Anna Xia',
-  heyi: 'Heyi Liu',
-  anuj: 'Anuj Kothari',
-  qijia: 'Qijia (Joy) Liu',
-  audrey: 'Audrey Yang',
-  joe: 'Joe Konno',
-  cynthia: 'Cynthia Adhiambo Otieno',
-  zachary: 'Zachary Huang-Ogata',
-  mia: 'Mia Kim',
-  sylvia: 'Sylvia Zhao',
-  wenny: 'Wenny Cheng',
-}
-
-const titles = {
-  'Sai Mamidala': 'DIRECTOR',
-  'Jason Hom': 'VICE DIRECTOR',
-  'Anna Xia': 'OUTREACH',
-  'Heyi Liu': 'OUTREACH',
-  'Anuj Kothari': 'LOGISTICS',
-  'Qijia (Joy) Liu': 'LOGISTICS',
-  'Audrey Yang': 'DEV',
-  'Joe Konno': 'DEV',
-  'Cynthia Adhiambo Otieno': 'SPONSORSHIP',
-  'Zachary Huang-Ogata': 'SPONSORSHIP',
-  'Mia Kim': 'CREATIVE',
-  'Sylvia Zhao': 'CREATIVE',
-  'Wenny Cheng': 'MARKETING',
-}
-
-const pictures = [
-  Sai, Jason, Anna, Heyi, Anuj, Qijia, Audrey, Joe, Cynthia, Zachary, Mia, Sylvia, Wenny,
-]
-
 export default function Index() {
-  const data = useStaticQuery(
-    graphql`
-    {
-      allFile(filter: { relativePath: {regex: "/organizers\\/.+(.png|.jpg)/"}}) {
-        edges {
-          node {
-            name
-            childImageSharp {
-                gatsbyImageData(
-                  width: 200
-                  height: 200
-                )
-            }
+  const imageData = useStaticQuery(graphql`
+    query {
+      allFile(filter: { relativeDirectory: { eq: "organizers" } }) {
+        nodes {
+          name
+          childImageSharp {
+            gatsbyImageData(
+              width: 200
+              height: 200
+             )
           }
         }
-      }      
+      }
     }
-  `,
+  `)
+  const organizerImages = Object.fromEntries(
+    imageData.allFile.nodes.map(node => [node.name, node.childImageSharp.gatsbyImageData]),
   )
-  const { allFile: { edges } } = data
+
   return (
     <div className="landing">
       <Navbar />
@@ -137,11 +88,12 @@ export default function Index() {
         <div className="organizers">
           <h3>Organizers</h3>
           <div className="organizers-grid">
-            {Object.keys(edges).map(id => (
+            {organizers.map(organizer => (
               <OrganizerCard
-                name={names[edges[id].node.name]}
-                title={titles[names[edges[id].node.name]]}
-                image={edges[id].node.childImageSharp.gatsbyImageData}
+                key={organizer.image}
+                name={organizer.name}
+                title={organizer.title}
+                image={organizerImages[organizer.image]}
               />
             ))}
           </div>
