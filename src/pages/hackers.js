@@ -54,7 +54,7 @@ export default function Hackers() {
             <a href="http://apply.pennapps.com/">
               <button className="apply-button" type="button">APPLY</button>
             </a>
-            <a href="https://2022f.pennapps.com/">
+            <a href="https://2023f.pennapps.com/">
               <button className="event-site-button" type="button">EVENT SITE</button>
             </a>
           </div>
