@@ -31,9 +31,9 @@ function DrawerAppBar({ currPage }) {
             <ListItemText primary="HOME" />
           </ListItemButton>
         </ListItem>
-        <ListItem key="PENNAPPS XXIII" disablePadding>
-          <ListItemButton href="https://2022f.pennapps.com/" sx={{ textAlign: 'left' }}>
-            <ListItemText primary="PENNAPPS XXIII" />
+        <ListItem key="PENNAPPS XXIV" disablePadding>
+          <ListItemButton href="https://2023f.pennapps.com/" sx={{ textAlign: 'left' }}>
+            <ListItemText primary="PENNAPPS XXIV" />
           </ListItemButton>
         </ListItem>
         {navItems.map(item => (
@@ -70,11 +70,11 @@ function DrawerAppBar({ currPage }) {
           </Typography>
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
             <Button
-              href="https://2022f.pennapps.com/"
-              key="PENNAPPS XXIII"
+              href="https://2023f.pennapps.com/"
+              key="PENNAPPS XXIV"
               sx={{ color: '#0F2944', fontFamily: 'proxima-nova', mr: '13px' }}
             >
-              PENNAPPS XXIII
+              PENNAPPS XXIV
             </Button>
             {navItems.map(item => (
               <Button

@@ -48,7 +48,7 @@ export default function Hackers() {
           <img className="iteration-logo" src={iterationLogo} alt="Iteration Logo" />
         </div>
         <div className="hackers-applications">
-          <h1 className="apply-header-text">Apply to PennAppsXXIII!</h1>
+          <h1 className="apply-header-text">Apply to PennAppsXXIV!</h1>
           <div className="applications-open-text">Applications are now open</div>
           <div className="buttons-container">
             <a href="http://apply.pennapps.com/">

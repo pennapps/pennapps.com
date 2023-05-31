@@ -87,7 +87,7 @@ export default function Ambassadors() {
               </p>
               <p>
                 You will also be part of the PennApps team and receive cool perks
-                including priority admission to PennApps XXIII, PennApps swag,
+                including priority admission to PennApps XXIV, PennApps swag,
                 merch, and a shoutout from our social media!
               </p>
             </div>
