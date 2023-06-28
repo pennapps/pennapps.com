@@ -14,7 +14,7 @@ import Button from '@mui/material/Button'
 import { Link } from 'gatsby'
 
 const drawerWidth = 240
-const navItems = ['HACKERS', 'ORGANIZERS', 'AMBASSADORS']
+const navItems = ['HACKERS', 'ORGANIZERS', 'AMBASSADORS', 'DIVERSITY FELLOW']
 
 function DrawerAppBar({ currPage }) {
   const [mobileOpen, setMobileOpen] = React.useState(false)
@@ -79,9 +79,11 @@ function DrawerAppBar({ currPage }) {
             {navItems.map(item => (
               <Button
                 component={Link}
-                to={`/${item}`.toLowerCase()}
+                to={`/${item.replace(' ', '-')}`.toLowerCase()}
                 key={item}
-                sx={{ bgcolor: item === currPage ? 'rgba(25, 118, 210, 0.1)' : '', color: '#0F2944', fontFamily: 'proxima-nova', mr: '13px' }}
+                sx={{
+                  bgcolor: item === currPage ? 'rgba(25, 118, 210, 0.1)' : '', color: '#0F2944', fontFamily: 'proxima-nova', mr: '13px',
+                }}
               >
                 {item}
               </Button>
