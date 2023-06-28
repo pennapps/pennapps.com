@@ -10,16 +10,16 @@ import '../styles/ambassadors.css'
 export function Head() {
   return (
     <>
-      <title>Diversity Fellow - PennApps</title>
+      <title>Diversity Fellows - PennApps</title>
       <link rel="stylesheet" href="https://use.typekit.net/tri7gwo.css" />
     </>
   )
 }
 
-export default function DiversityFellow() {
+export default function DiversityFellows() {
   return (
     <div>
-      <Navbar currPage="DIVERSITY FELLOW" />
+      <Navbar currPage="DIVERSITY FELLOWS" />
       <div className="ambassador-section">
         <div className="main-content">
           <div className="application-info">

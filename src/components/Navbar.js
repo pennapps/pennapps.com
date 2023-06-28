@@ -14,7 +14,7 @@ import Button from '@mui/material/Button'
 import { Link } from 'gatsby'
 
 const drawerWidth = 240
-const navItems = ['HACKERS', 'ORGANIZERS', 'AMBASSADORS', 'DIVERSITY FELLOW']
+const navItems = ['HACKERS', 'ORGANIZERS', 'AMBASSADORS', 'DIVERSITY FELLOWS']
 
 function DrawerAppBar({ currPage }) {
   const [mobileOpen, setMobileOpen] = React.useState(false)
