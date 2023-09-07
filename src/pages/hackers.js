@@ -49,7 +49,9 @@ export default function Hackers() {
         </div>
         <div className="hackers-applications">
           <h1 className="apply-header-text">Apply to PennAppsXXIV!</h1>
-          <div className="applications-open-text">Applications are now open</div>
+          <div className="applications-open-text">
+            Applications are now closed. Check out the event site to get ready to hack!
+          </div>
           <div className="buttons-container">
             <a href="http://apply.pennapps.com/">
               <button className="apply-button" type="button">APPLY</button>

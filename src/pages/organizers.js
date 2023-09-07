@@ -42,9 +42,9 @@ export default function Organizers() {
 
         {applicationsOpen ? (
           <div className="organizers-applications">
-            <h2>Applications are Open!</h2>
-            <div>Join the PennApps organizing team today</div>
-            <button className="applications-btn" type="button">APPLY</button>
+            <h2>Applications will Open in Spring!</h2>
+            <div>Learn about the PennApps organizing team today.</div>
+            {/*<button className="applications-btn" type="button">APPLY</button>*/}
           </div>
         ) : (
           <div className="organizers-applications">
