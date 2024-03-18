@@ -1,62 +1,62 @@
 [
   {
-    "name": "Anuj Kothari",
+    "name": "Lina Chihoub",
     "title": "Co-Director",
-    "image": "anuj"
+    "image": "lina_chihoub"
   },
   {
-    "name": "Qijia (Joy) Liu",
+    "name": "Zora Mardjoko",
     "title": "Co-Director",
-    "image": "joy"
-  },
-  {
-    "name": "Minnie Kim",
-    "title": "Creative",
-    "image": "minnie"
+    "image": "zora_mardjoko"
   },
   {
     "name": "Jackie Li",
     "title": "Creative",
-    "image": "jackie"
+    "image": "jackie_li"
   },
   {
-    "name": "Sahishnu Hanumolu",
+    "name": "Rachel Lin",
+    "title": "Creative",
+    "image": "rachel_lin"
+  },
+  {
+    "name": "Zihao Zhou",
     "title": "Outreach",
-    "image": "sahishnu"
+    "image": "zihao_zhou"
   },
   {
     "name": "Melody Cheng",
     "title": "Outreach",
-    "image": "melody"
+    "image": "melody_cheng"
   },
   {
-    "name": "Yuying Fan",
+    "name": "Joseph Dattilo",
     "title": "Dev",
-    "image": "yuying"
+    "image": "joseph_dattilo"
   },
   {
-    "name": "Vincent Cai",
+    "name": "Millie Gu",
     "title": "Dev",
-    "image": "vincent"
+    "image": "millie_gu"
   },
   {
     "name": "Lina Chihoub",
     "title": "Sponsorship",
-    "image": "lina"
+    "image": "lina_chihoub"
   },
   {
-    "name": "Lyndsey Barrett",
+    "name": "Akshat Parthiban",
     "title": "Sponsorship",
-    "image": "lyndsey"
+    "image": "14"
   },
   {
-    "name": "Helena Zhang",
+    "name": "August Fu",
     "title": "Logistics",
-    "image": "helena"
+    "image": "august_fu"
   },
   {
-    "name": "Ishaan Lal",
+    "name": "Caroline Chen",
     "title": "Logistics",
-    "image": "ishaan"
+    "image": "caroline_chen"
   }
 ]
