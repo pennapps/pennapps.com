@@ -47,9 +47,33 @@ function DrawerAppBar({ currPage }) {
     </Box>
   )
 
+
   return (
-    <Box sx={{ display: 'flex' }}>
-      <AppBar component="nav" sx={{ bgcolor: 'rgba(255, 255, 255, 0.8)' }} elevation={0}>
+    <>
+      <Box
+  sx={{
+    position: 'fixed',
+    top: 0,
+    width: '100%',
+    height: '30px',
+    zIndex: 1000,
+    bgcolor: '#153454',
+    color: '#dce2e8',
+    textAlign: 'center',
+    padding: '10px',
+  }}
+>
+<Typography variant="body1" sx={{ fontFamily: `'futura-pt', 'Futura', 'Trebuchet MS', 'Arial', 'sans-serif'` }}>
+  Fill out this{' '}
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLSemhXtQOOhTzAsz06QA8t9aU-shJs_ZukuU6rW8Nvo2FoiavQ/viewform" style={{ color: '#7fa3c9', textDecoration: 'underline', fontWeight: 'inherit', fontFamily: `'futura-pt', 'Futura', 'Trebuchet MS', 'Arial', 'sans-serif'` }}>
+    form
+  </a>{' '}
+  to be the first to know when the applications open for summer 2024!
+</Typography>
+
+</Box>
+
+      <AppBar component="nav" sx={{ top: '45px', bgcolor: 'rgba(255, 255, 255, 0.8)', position: 'relative', zIndex: 1 }} elevation={0}>
         <Toolbar>
           <Typography
             variant="h6"
@@ -109,7 +133,7 @@ function DrawerAppBar({ currPage }) {
           open={mobileOpen}
           onClose={handleDrawerToggle}
           ModalProps={{
-            keepMounted: true, // Better open performance on mobile.
+            keepMounted: true,
           }}
           sx={{
             display: {
@@ -124,7 +148,7 @@ function DrawerAppBar({ currPage }) {
         </Drawer>
       </Box>
       <Toolbar />
-    </Box>
+    </>
   )
 }
 
