@@ -12,8 +12,8 @@ body,
 }
 
 .hackers-background-wrapper {
-    background-color: #FAF5E7;
-    color: #1F4A38;
+    background-color: #CFD3FF;
+    color: #010029;
     min-height: 100%;
     margin: 0;
     padding: 0;
@@ -23,7 +23,7 @@ body,
 .hackers-background-wrapper h3 {
     font-family: futura-pt, Futura, "Trebuchet MS", Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
-    color: #1F4A38;
+    color: #010029;
     margin-top: 30px;
     margin-bottom: 30px;
     font-size: 22px;
@@ -98,7 +98,7 @@ h1 {
     margin-inline-end: 0;
     border-width: 1px;
     border-style: solid;
-    color: #1F4A3899;
+    color: #010029;
 }
 
 .faq-text {
@@ -111,7 +111,7 @@ h1 {
 }
 
 .hackers-body-container .faq-section {
-    border-top-color: rgba(31, 74, 56, 0.6);
+    border-top-color: #010029;
     border-top-style: solid;
     border-top-width: 1px;
     transition: all 500ms;
@@ -120,12 +120,12 @@ h1 {
 }
 
 .hackers-body-container .faq-section.open {
-    background-color: #FAF5E7;
+    background-color: #CFD3FF;
 }
 
 .question-text {
     font-family: "proxima-nova";
-    color: #1F4A38;
+    color: #010029;
     margin-block-start: 0.2em;
     margin-block-end: 0.2em;
     margin-inline-start: 0;
@@ -142,7 +142,7 @@ h1 {
 }
 
 .hackers-background-wrapper .faq-section:last-of-type {
-    border-bottom-color: rgba(31, 74, 56, 0.6);
+    border-bottom-color: #010029;
 }
 
 .apply-button {
@@ -158,11 +158,11 @@ h1 {
     font-family: "proxima-nova";
     font-size: 16px;
     font-weight: 600;
-    background: #1F4A38;
-    color: #F1ECDE;
+    background: #010029;
+    color: #CFD3FF;
     text-align: center;
     transition: all 0.2s;
-    border: 2px solid #1F4A38;
+    border: 2px solid #010029;
 }
 
 .event-site-button {
@@ -178,25 +178,25 @@ h1 {
     font-family: "proxima-nova";
     font-size: 16px;
     font-weight: 600;
-    background: #1F4A38;
-    color: #F1ECDE;
+    background: #010029;
+    color: #CFD3FF;
     text-align: center;
     transition: all 0.2s;
-    border: 2px solid #1F4A38;
+    border: 2px solid #010029;
 }
 
 .apply-button:hover {
     cursor: pointer;
-    background-color: rgba(0, 0, 0, 0);
-    color: #1F4A38;
-    border: 1px solid #1F4A38;
+    background-color: #CFD3FF;
+    color: #010029;
+    border: 1px solid #010029;
 }
 
 .event-site-button:hover {
     cursor: pointer;
-    background-color: rgba(0, 0, 0, 0);
-    color: #1F4A38;
-    border: 1px solid #1F4A38;
+    background-color: #CFD3FF;
+    color: #010029;
+    border: 1px solid #010029;
 }
 
 .header {
@@ -220,7 +220,7 @@ h1 {
     box-sizing: border-box;
     text-decoration: none;
     background: #FFFFFF;
-    color: #1F4A38;
+    color: #010029;
     text-align: center;
     transition: all 0.2s;
 }
@@ -235,7 +235,7 @@ h1 {
     box-sizing: border-box;
     text-decoration: none;
     background: #FFFFFF;
-    color: #1F4A38;
+    color: #010029;
     text-align: center;
     transition: all 0.2s;
 }

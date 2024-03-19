@@ -5,7 +5,7 @@ import Navbar from '../components/Navbar'
 import Footer from '../components/Footer'
 import FAQs from '../components/FAQs'
 import chevronImage from '../images/arrow-east.png'
-import iterationLogo from '../images/iteration-logo-f22.png'
+import iterationLogo from '../images/iteration-logo-f23.png'
 import '../styles/hackers.css'
 
 const content = {
