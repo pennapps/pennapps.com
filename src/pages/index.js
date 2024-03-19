@@ -40,6 +40,9 @@ export default function Index() {
     imageData.allFile.nodes.map(node => [node.name, node.childImageSharp.gatsbyImageData]),
   )
 
+  // add a state variable to hold the URL for the QR Code: 
+  const [qrText, setQrText] = React.useState(''); 
+
   return (
     <div className="landing">
       <Navbar />
@@ -68,6 +71,7 @@ export default function Index() {
             engineers and work on awesome projects.
           </div>
         </div>
+
         <div className="timeline">
           <h3>Event Timeline</h3>
           <div className="timeline-img-wrapper">
@@ -83,6 +87,7 @@ export default function Index() {
               />
             </picture>
           </div>
+
           <p>Reach out to contact@pennapps.com if you have any questions!</p>
         </div>
         <div className="organizers">
