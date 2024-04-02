@@ -57,18 +57,18 @@ function DrawerAppBar({ currPage }) {
     width: '100%',
     height: '30px',
     zIndex: 1000,
-    bgcolor: '#153454',
+    bgcolor: '#990000',
     color: '#dce2e8',
     textAlign: 'center',
     padding: '10px',
   }}
 >
 <Typography variant="body1" sx={{ fontFamily: `'futura-pt', 'Futura', 'Trebuchet MS', 'Arial', 'sans-serif'` }}>
-  Fill out this{' '}
-  <a href="https://docs.google.com/forms/d/e/1FAIpQLSemhXtQOOhTzAsz06QA8t9aU-shJs_ZukuU6rW8Nvo2FoiavQ/viewform" style={{ color: '#7fa3c9', textDecoration: 'underline', fontWeight: 'inherit', fontFamily: `'futura-pt', 'Futura', 'Trebuchet MS', 'Arial', 'sans-serif'` }}>
-    form
-  </a>{' '}
-  to be the first to know when the applications open for summer 2024!
+  <b> FILL OUT THIS{' '} </b>
+  <b href="https://docs.google.com/forms/d/e/1FAIpQLSemhXtQOOhTzAsz06QA8t9aU-shJs_ZukuU6rW8Nvo2FoiavQ/viewform" style={{ color: '#7fa3c9', textDecoration: 'underline', fontWeight: 'inherit', fontFamily: `'futura-pt', 'Futura', 'Trebuchet MS', 'Arial', 'sans-serif'` }}>
+    FORM
+  </b>{' '}
+  <b>TO BE THE FIRST TO KNOW WHEN THE APPLICATIONS OPEN FOR 2024! </b>
 </Typography>
 
 </Box>
