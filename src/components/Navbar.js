@@ -14,7 +14,7 @@ import Button from '@mui/material/Button'
 import { Link } from 'gatsby'
 
 const drawerWidth = 240
-const navItems = ['HACKERS', 'ORGANIZERS', 'AMBASSADORS', 'DIVERSITY FELLOWS']
+const navItems = ['ABOUT', 'HACKERS', 'ORGANIZERS', 'AMBASSADORS', 'DIVERSITY FELLOWS']
 
 function DrawerAppBar({ currPage }) {
   const [mobileOpen, setMobileOpen] = React.useState(false)
@@ -29,11 +29,6 @@ function DrawerAppBar({ currPage }) {
         <ListItem key="HOME" disablePadding>
           <ListItemButton component={Link} to="/" sx={{ textAlign: 'left' }}>
             <ListItemText primary="HOME" />
-          </ListItemButton>
-        </ListItem>
-        <ListItem key="PENNAPPS XXIV" disablePadding>
-          <ListItemButton href="https://2023f.pennapps.com/" sx={{ textAlign: 'left' }}>
-            <ListItemText primary="PENNAPPS XXIV" />
           </ListItemButton>
         </ListItem>
         {navItems.map(item => (
@@ -69,13 +64,6 @@ function DrawerAppBar({ currPage }) {
             PENNAPPS
           </Typography>
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
-            <Button
-              href="https://2023f.pennapps.com/"
-              key="PENNAPPS XXIV"
-              sx={{ color: '#0F2944', fontFamily: 'proxima-nova', mr: '13px' }}
-            >
-              PENNAPPS XXIV
-            </Button>
             {navItems.map(item => (
               <Button
                 component={Link}
