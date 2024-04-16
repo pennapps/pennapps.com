@@ -68,7 +68,7 @@ export default function About() {
             engineers and work on awesome projects.
           </div>
         </div>
-        <div className="timeline">
+        {/* <div className="timeline">
           <h3>Event Timeline</h3>
           <div className="timeline-img-wrapper">
             <picture>
@@ -84,7 +84,7 @@ export default function About() {
             </picture>
           </div>
           <p>Reach out to contact@pennapps.com if you have any questions!</p>
-        </div>
+    </div> */}
         <div className="organizers">
           <h3>Organizers</h3>
           <div className="organizers-grid">
