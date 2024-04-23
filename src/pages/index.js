@@ -1,3 +1,4 @@
+/* eslint-disable linebreak-style */
 import * as React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 
@@ -20,6 +21,37 @@ export function Head() {
   )
 }
 
+export function EventTimeline() {
+  const data = [
+    `January : Spring Recruiting for Organizers (Penn Students Only)`,
+    'March : PennApps Spring Event',
+    'May : Fall Recruiting for Organizers (Penn Students Only)',
+    'June : Applications for Campus Ambassadors',
+    'July : Hacker Applications Due (Non-Penn Students)',
+    'August : Hacker Applications Due (Penn Students)',
+    'September : PennApps Flagship Event',
+  ]
+
+  return (
+    <div className="event-container">
+      {data.map((key, val) => {
+        const split = key.split(`:`)
+        return (
+          <div className="timeline-row">
+            <div className="left"><h2>{split[0]}</h2></div>
+            <div>
+              <span className="bar">
+                <div className="circle" />
+              </span>
+            </div>
+            <div className="right"><span>{split[1]}</span></div>
+          </div>
+        )
+      })}
+    </div>
+  )
+}
+
 export default function Index() {
   const imageData = useStaticQuery(graphql`
     query {
@@ -27,17 +59,17 @@ export default function Index() {
         nodes {
           name
           childImageSharp {
-            gatsbyImageData(
-              width: 200
-              height: 200
-             )
+            gatsbyImageData(width: 200, height: 200)
           }
         }
       }
     }
   `)
   const organizerImages = Object.fromEntries(
-    imageData.allFile.nodes.map(node => [node.name, node.childImageSharp.gatsbyImageData]),
+    imageData.allFile.nodes.map(node => [
+      node.name,
+      node.childImageSharp.gatsbyImageData,
+    ]),
   )
 
   return (
@@ -58,31 +90,31 @@ export default function Index() {
         <div className="about-pennapps">
           <h3>About PennApps</h3>
           <div>
-            Founded in the fall of 2009, PennApps was the nation’s first student-run college
-            hackathon. Since then, it has spurred a revolution in the way engineering students
-            develop and showcase their skills, spawning an entire “league” of hackathons across the
-            nation. In past years, over a thousand students from the U.S. and other countries like
-            Switzerland, Canada, England, and Singapore have converged in Philadelphia for the
-            spring and fall editions of the event for a weekend of creation and discovery. Both
-            beginners and experts alike will work together, learn and compete to become better
-            engineers and work on awesome projects.
+            Founded in the fall of 2009, PennApps was the nation’s first
+            student-run college hackathon. Since then, it has spurred a
+            revolution in the way engineering students develop and showcase
+            their skills, spawning an entire “league” of hackathons across the
+            nation. In past years, over a thousand students from the U.S. and
+            other countries like Switzerland, Canada, England, and Singapore
+            have converged in Philadelphia for the spring and fall editions of
+            the event for a weekend of creation and discovery. Both beginners
+            and experts alike will work together, learn and compete to become
+            better engineers and work on awesome projects.
           </div>
         </div>
         <div className="timeline">
           <h3>Event Timeline</h3>
-          <div className="timeline-img-wrapper">
-            <picture>
-              <source
-                media="(min-width: 680px)"
-                srcSet={timelineImage}
-              />
-              <img
-                src={mobileTimelineImage}
-                alt="Timeline Image"
-                className="timeline-img"
-              />
-            </picture>
-          </div>
+          <EventTimeline />
+          {/*<div className="timeline-img-wrapper">
+          <picture>
+            <source media="(min-width: 680px)" srcSet={timelineImage} />
+            <img
+              src={mobileTimelineImage}
+              alt="Timeline Image"
+              className="timeline-img"
+            />
+          </picture>
+          </div>*/}
           <p>Reach out to contact@pennapps.com if you have any questions!</p>
         </div>
         <div className="organizers">
