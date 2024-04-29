@@ -55,7 +55,7 @@ function DrawerAppBar({ currPage }) {
     position: 'fixed',
     top: 0,
     width: '100%',
-    height: '30px',
+    height: '45px',
     zIndex: 1000,
     bgcolor: '#990000',
     color: '#dce2e8',
