@@ -73,7 +73,7 @@ function DrawerAppBar({ currPage }) {
 
 </Box>
 
-      <AppBar component="nav" sx={{ top: '45px', bgcolor: 'rgba(255, 255, 255, 0.8)', position: 'relative', zIndex: 1 }} elevation={0}>
+      <AppBar component="nav" sx={{ top: '0', marginTop: '70px', bgcolor: 'rgba(255, 255, 255, 0.8)', position: 'relative', zIndex: 1, display: 'flex', }} elevation={0}>
         <Toolbar>
           <Typography
             variant="h6"
@@ -87,12 +87,13 @@ function DrawerAppBar({ currPage }) {
               letterSpacing: 2,
               color: '#0F2944',
               textDecoration: 'none',
-              ml: '11px',
+              marginRight: '11px',
+              ml: { xs: '0px', sm: '0px', lg: '0px' },
             }}
           >
             PENNAPPS
           </Typography>
-          <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
+          <Box sx={{display: { xs: 'none', sm: 'flex' }, justifyContent: 'flex-end'}}>
             <Button
               href="https://2023f.pennapps.com/"
               key="PENNAPPS XXIV"
