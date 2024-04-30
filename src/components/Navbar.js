@@ -14,7 +14,7 @@ import Button from '@mui/material/Button'
 import { Link } from 'gatsby'
 
 const drawerWidth = 240
-const navItems = ['HACKERS', 'ORGANIZERS', 'AMBASSADORS', 'DIVERSITY FELLOWS']
+const navItems = ['ABOUT', 'HACKERS', 'ORGANIZERS', 'AMBASSADORS', 'DIVERSITY FELLOWS']
 
 function DrawerAppBar({ currPage }) {
   const [mobileOpen, setMobileOpen] = React.useState(false)
@@ -31,11 +31,6 @@ function DrawerAppBar({ currPage }) {
             <ListItemText primary="HOME" />
           </ListItemButton>
         </ListItem>
-        <ListItem key="PENNAPPS XXIV" disablePadding>
-          <ListItemButton href="https://2023f.pennapps.com/" sx={{ textAlign: 'left' }}>
-            <ListItemText primary="PENNAPPS XXIV" />
-          </ListItemButton>
-        </ListItem>
         {navItems.map(item => (
           <ListItem key={item} disablePadding>
             <ListItemButton component={Link} to={`/${item}`.toLowerCase()} sx={{ textAlign: 'left' }}>
@@ -47,10 +42,10 @@ function DrawerAppBar({ currPage }) {
     </Box>
   )
 
-
   return (
     <>
       <Box
+
   sx={{
     position: 'fixed',
     top: 0,
@@ -71,7 +66,7 @@ function DrawerAppBar({ currPage }) {
   <b>TO BE THE FIRST TO KNOW WHEN THE APPLICATIONS OPEN FOR 2024! </b>
 </Typography>
 
-</Box>
+      </Box>
 
       <AppBar component="nav" sx={{ top: '0', marginTop: '70px', bgcolor: 'rgba(255, 255, 255, 0.8)', position: 'relative', zIndex: 1, display: 'flex', }} elevation={0}>
         <Toolbar>
@@ -93,6 +88,7 @@ function DrawerAppBar({ currPage }) {
           >
             PENNAPPS
           </Typography>
+
           <Box sx={{display: { xs: 'none', sm: 'flex' }, justifyContent: 'flex-end'}}>
             <Button
               href="https://2023f.pennapps.com/"
@@ -101,6 +97,7 @@ function DrawerAppBar({ currPage }) {
             >
               PENNAPPS XXIV
             </Button>
+
             {navItems.map(item => (
               <Button
                 component={Link}

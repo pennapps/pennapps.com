@@ -11,7 +11,7 @@ import FAQs from '../components/FAQs'
 
 const questions = {
   'Who can be an organizer for PennApps?':
-          'Only Penn students can be organizers. If you’re a current Penn student, look out for an application in April if you are interested in joining us!',
+          'Only Penn students can be organizers. If you’re a current Penn student, look out for an application in the fall if you are interested in joining us!',
   'Do I need previous experience to be an organizer?':
           'No previous experience required! We are looking for people who are passionate about creating an exciting and inclusive space to meet others and learn about tech and entrepreneurship and are able to commit to the time to be an organizer.',
   'What is the time commitment?':
@@ -42,7 +42,8 @@ export default function Organizers() {
 
         {applicationsOpen ? (
           <div className="organizers-applications">
-            <h2>Applications will Open in Spring!</h2>
+            <h2>Applications currently closed</h2>
+            <h2>Will open in Spring 2025</h2>
             <div>Learn about the PennApps organizing team today.</div>
             {/*<button className="applications-btn" type="button">APPLY</button>*/}
           </div>
