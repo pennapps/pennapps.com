@@ -12,6 +12,7 @@ import Toolbar from '@mui/material/Toolbar'
 import Typography from '@mui/material/Typography'
 import Button from '@mui/material/Button'
 import { Link } from 'gatsby'
+import YearsDropdown from './YearsDropdown'; 
 
 const drawerWidth = 240
 const navItems = ['ABOUT', 'HACKERS', 'ORGANIZERS', 'AMBASSADORS', 'DIVERSITY FELLOWS']
@@ -88,23 +89,18 @@ function DrawerAppBar({ currPage }) {
           >
             PENNAPPS
           </Typography>
-
-          <Box sx={{display: { xs: 'none', sm: 'flex' }, justifyContent: 'flex-end'}}>
-            <Button
-              href="https://2023f.pennapps.com/"
-              key="PENNAPPS XXIV"
-              sx={{ color: '#0F2944', fontFamily: 'proxima-nova', mr: '13px' }}
-            >
-              PENNAPPS XXIV
-            </Button>
-
-            {navItems.map(item => (
+          <Box sx={{ display: { xs: 'none', sm: 'flex' } }}>
+            <YearsDropdown />
+            {navItems.map((item, index) => (
               <Button
                 component={Link}
                 to={`/${item.replace(' ', '-')}`.toLowerCase()}
                 key={item}
                 sx={{
-                  bgcolor: item === currPage ? 'rgba(25, 118, 210, 0.1)' : '', color: '#0F2944', fontFamily: 'proxima-nova', mr: '13px',
+                  bgcolor: item === currPage ? 'rgba(25, 118, 210, 0.1)' : '',
+                  color: '#0F2944',
+                  fontFamily: 'proxima-nova',
+                  mr: index === navItems.length - 1 ? '13px' : 0, // Add margin-right to the last button
                 }}
               >
                 {item}

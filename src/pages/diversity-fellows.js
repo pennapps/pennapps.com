@@ -6,6 +6,7 @@ import Footer from '../components/Footer'
 import ApplicationsOpenSvg from '../images/applications-open.svg'
 import ApplicationsClosedSvg from '../images/applications-closed.svg'
 import '../styles/ambassadors.css'
+import QRCode from 'qrcode.react'; 
 
 export function Head() {
   return (
@@ -17,6 +18,9 @@ export function Head() {
 }
 
 export default function DiversityFellows() {
+  // add a state variable to hold the URL for the QR Code: 
+  const [qrText, setQrText] = React.useState(''); 
+
   return (
     <div>
       <Navbar currPage="DIVERSITY FELLOWS" />
@@ -26,7 +30,7 @@ export default function DiversityFellows() {
             <div>
               <h3>Become a PennApps Diversity Fellow</h3>
               <p>
-                Do you identify as a first-generation, low-income, or historically underrepresented hacker? Can you bring unique perspectives and experiences to PennApps XXIV? Are you looking for financial support for traveling to and attending our hackathon? If you said ‘yes’ to any of these questions, apply to join our Diversity Fellows Program now! Scan the QR code above, or go to this link:
+                Do you identify as a first-generation, low-income, or historically underrepresented hacker? Can you bring unique perspectives and experiences to PennApps XXIV? Are you looking for financial support for traveling to and attending our hackathon? If you said ‘yes’ to any of these questions, apply to join our Diversity Fellows Program now! Scan the QR code below, or go to this link:
                 {' '}
                 <a href="https://tinyurl.com/pennapps-dfp-2023">https://tinyurl.com/pennapps-dfp-2023</a>
               </p>
@@ -50,6 +54,14 @@ export default function DiversityFellows() {
                   Applications are due on Sunday, July 16th, at 11:59 PM EST.
                 </div>
               </div>
+
+              {/* Add QR code generator */} 
+              <div className="qr-code-generator"> 
+                <h3>Apply to be a Diversity Fellow!</h3> 
+                <QRCode value="https://docs.google.com/forms/d/e/1FAIpQLSeWCWk6Ahr1Kdwq0Swat1d27r7MWPPsme2Us8p6s-6Nyx_s-A/viewform" /> 
+                <p>Scan the QR code to access the form</p>
+              </div>
+
             </div>
           </div>
           <hr className="section-divider" />
