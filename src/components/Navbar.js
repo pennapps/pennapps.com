@@ -60,9 +60,9 @@ function DrawerAppBar({ currPage }) {
 >
 <Typography variant="body1" sx={{ fontFamily: `'futura-pt', 'Futura', 'Trebuchet MS', 'Arial', 'sans-serif'` }}>
   <b> FILL OUT THIS{' '} </b>
-  <b href="https://docs.google.com/forms/d/e/1FAIpQLSemhXtQOOhTzAsz06QA8t9aU-shJs_ZukuU6rW8Nvo2FoiavQ/viewform" style={{ color: '#7fa3c9', textDecoration: 'underline', fontWeight: 'inherit', fontFamily: `'futura-pt', 'Futura', 'Trebuchet MS', 'Arial', 'sans-serif'` }}>
+  <a href="https://docs.google.com/forms/d/e/1FAIpQLSemhXtQOOhTzAsz06QA8t9aU-shJs_ZukuU6rW8Nvo2FoiavQ/viewform" style={{ color: '#7fa3c9', textDecoration: 'underline', fontWeight: 'inherit', fontFamily: `'futura-pt', 'Futura', 'Trebuchet MS', 'Arial', 'sans-serif'` }}>
     FORM
-  </b>{' '}
+  </a>{' '}
   <b>TO BE THE FIRST TO KNOW WHEN THE APPLICATIONS OPEN FOR 2024! </b>
 </Typography>
 
