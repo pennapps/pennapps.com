@@ -6,7 +6,6 @@ import Footer from '../components/Footer'
 import ApplicationsOpenSvg from '../images/applications-open.svg'
 import ApplicationsClosedSvg from '../images/applications-closed.svg'
 import '../styles/ambassadors.css'
-import QRCode from 'qrcode.react'; 
 
 export function Head() {
   return (
@@ -18,9 +17,6 @@ export function Head() {
 }
 
 export default function DiversityFellows() {
-  // add a state variable to hold the URL for the QR Code: 
-  const [qrText, setQrText] = React.useState(''); 
-
   return (
     <div>
       <Navbar currPage="DIVERSITY FELLOWS" />
@@ -51,15 +47,8 @@ export default function DiversityFellows() {
                   to tell us more about you! We want to know how your background and experiences have given you a unique perspective, and how you would implement this perspective at PennApps XXIV.
                   <br />
                   <br />
-                  Applications are due on Sunday, July 16th, at 11:59 PM EST.
+                  Stay tuned for Diversity Fellow 2024!
                 </div>
-              </div>
-
-              {/* Add QR code generator */} 
-              <div className="qr-code-generator"> 
-                <h3>Apply to be a Diversity Fellow!</h3> 
-                <QRCode value="https://docs.google.com/forms/d/e/1FAIpQLSeWCWk6Ahr1Kdwq0Swat1d27r7MWPPsme2Us8p6s-6Nyx_s-A/viewform" /> 
-                <p>Scan the QR code to access the form</p>
               </div>
 
             </div>

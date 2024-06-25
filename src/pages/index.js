@@ -8,7 +8,7 @@ import '../styles/home.css'
 export function Head() {
   return (
     <>
-      <title>PennApps XXV - Coming Soon</title>
+      <title>PennApps XXV</title>
       <link rel="stylesheet" href="https://use.typekit.net/tri7gwo.css" />
     </>
   )
@@ -20,7 +20,7 @@ export default function Index() {
       <Navbar />
       <div className="content">
         <h1>PennApps XXV</h1>
-        <h4>Coming Soon...</h4>
+        <h4>Is <a href="https://2024f.pennapps.com" className="landing-link">Here</a>!</h4>
       </div>
       <Footer />
     </div>
